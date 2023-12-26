@@ -26,5 +26,5 @@
   clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   top: 0;
   right: 0;
-  background: linear-gradient(to right, #007FFF, #0c46bc);
+  background: linear-gradient(to right, #007fff, #0c46bc);
 }
