@@ -1,0 +1,7 @@
+.a {
+  background: linear-gradient(to right, white, lightblue);
+}
+
+.aboutMeArea p, .aboutMeArea strong {
+	font-family: 'Kalam', cursive;
+}

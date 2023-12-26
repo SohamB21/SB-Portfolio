@@ -1,0 +1,30 @@
+.i {
+  background: linear-gradient(to right, white, lightblue);
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 5s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.i-bg {
+  clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  top: 0;
+  right: 0;
+  background: linear-gradient(to right, #007FFF, #0c46bc);
+}
