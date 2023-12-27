@@ -11,49 +11,51 @@ const projectData = [
   {
     imageSrc: TopCornImage,
     altText: "TopCorn",
-    textColor: "white",
+    description:
+      "TopCorn is a React Native movie app for enthusiasts, featuring a vast library, detailed movie info, and easy ticket booking. Developed cross-platform features prioritizing user-friendly interfaces, encrypted storage, and performance enhancements based on user feedback.",
     deployedLink: null,
     githubLink: "https://github.com/SohamB21/TopCorn-MovieApp",
   },
   {
     imageSrc: NoteNestImage,
     altText: "NoteNest",
-    textColor: "black",
+    description:
+      "NoteNest, a productivity-boosting note-taking platform, allows you to effortlessly create, edit, and organize your notes in a dynamic space. The intuitive web app facilitates real-time CRUD operations for note management, utilizing a secure MySQL database.",
     deployedLink: null,
     githubLink: "https://github.com/SohamB21/NoteNest",
   },
   {
     imageSrc: SportsQuoteGeneratorImage,
     altText: "Sports Quote Generator",
-    textColor: "white",
+    description: "This is a demo description.",
     deployedLink: "https://sports-quote-generator-react-js.vercel.app/",
     githubLink: "https://github.com/SohamB21/Sports-Quote-Generator-ReactJS",
   },
   {
     imageSrc: TypingSpeedTestGameImage,
     altText: "Typing Speed-Test Game",
-    textColor: "black",
+    description: "This is a demo description.",
     deployedLink: "https://sohamb21.github.io/Typing-SpeedTest-Game/",
     githubLink: "https://github.com/SohamB21/Typing-SpeedTest-Game",
   },
   {
     imageSrc: ResumeGeneratorImage,
     altText: "Resume Generator",
-    textColor: "black",
+    description: "This is a demo description.",
     deployedLink: "https://sohamb21.github.io/Resume-Generator/",
     githubLink: "https://github.com/SohamB21/Resume-Generator",
   },
   {
     imageSrc: StickyNotesImage,
     altText: "Sticky Notes",
-    textColor: "black",
+    description: "This is a demo description.",
     deployedLink: null,
     githubLink: null,
   },
 ];
 
 const generateProjectItem = (project) => (
-  <div className="project relative group my-8 mx-10">
+  /*<div className="project relative group my-8 mx-10">
     <img
       src={project.imageSrc}
       alt={project.altText}
@@ -86,6 +88,39 @@ const generateProjectItem = (project) => (
           </a>
         )}
       </div>
+    </div>
+  </div>*/
+  <div className="relative group overflow-hidden m-4 p-4 shadow-lg shadow-blue-500 rounded-lg border border-blue-200 flex flex-col justify-center items-center">
+    <img
+      src={project.imageSrc}
+      alt={project.altText}
+      className="w-96 h-56 shadow-md shadow-blue-500 rounded-lg transition-transform hover:scale-105"
+    />
+    <div className="info max-w-md flex flex-col items-center justify-center p-2 text-center text-indigo-950">
+      <h3 className="text-2xl font-bold m-2">{project.altText}</h3>
+      <p>{project.description}</p>
+    </div>
+    <div className="flex flex-row items-center justify-center gap-4 text-white">
+      {project.deployedLink && (
+        <a
+          href={project.deployedLink}
+          className="bg-blue-600 border border-blue-900 rounded-lg py-2 px-4 m-2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Deployed Project
+        </a>
+      )}
+      {project.githubLink && (
+        <a
+          href={project.githubLink}
+          className="bg-blue-600 border border-blue-900 rounded-lg py-2 px-4 m-2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      )}
     </div>
   </div>
 );
