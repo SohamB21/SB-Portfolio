@@ -73,7 +73,7 @@ const generateProjectItem = (project) => (
     />
 
     <div className="info max-w-md flex flex-col items-center justify-center p-1 text-center">
-      <h3 className="text-2xl font-bold mt-2">{project.altText}</h3>
+      <h3 className="text-2xl font-bold mt-2 mb-1">{project.altText}</h3>
       <p className="text-sm">{project.description}</p>
       <div className="flex flex-wrap gap-2 mt-2 justify-center">
         {project.languages.map((language, index) => (
@@ -91,7 +91,7 @@ const generateProjectItem = (project) => (
       {project.deployedLink && (
         <a
           href={project.deployedLink}
-          className="bg-blue-600 border border-blue-900 rounded-md py-2 px-4"
+          className="bg-blue-600 hover:bg-blue-700 border border-blue-900 rounded-md py-2 px-4"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -101,7 +101,7 @@ const generateProjectItem = (project) => (
       {project.githubLink && (
         <a
           href={project.githubLink}
-          className="bg-blue-600 border border-blue-900 rounded-md py-2 px-4"
+          className="bg-blue-600 hover:bg-blue-700 border border-blue-900 rounded-md py-2 px-4"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -120,17 +120,17 @@ const Projects = () => {
 
   return (
     <section
-      className="s h-full w-full flex flex-col items-center justify-center py-20"
+      className="p h-full w-full flex flex-col items-center justify-center py-20"
       style={{ background: "linear-gradient(to right, white, lightblue)" }}
     >
-      <h2 className="text-3xl font-bold">My Projects</h2>
+      <h1 className="text-3xl font-bold">My Projects</h1>
       <div className="flex flex-wrap pt-10 pb-4 items-center justify-center">
         {visibleProjects.map(generateProjectItem)}
       </div>
 
       {!showAllProjects && (
         <button
-          className="bg-indigo-600 border border-blue-900 rounded-md py-2 px-4 text-white"
+          className="bg-indigo-700 hover:bg-indigo-800 border border-blue-900 rounded-md py-2 px-4 text-white"
           onClick={() => setShowAllProjects(true)}
         >
           See More
@@ -138,7 +138,7 @@ const Projects = () => {
       )}
       {showAllProjects && (
         <button
-          className="bg-indigo-600 border border-blue-900 rounded-md py-2 px-4 text-white"
+          className="bg-indigo-700 hover:bg-indigo-800 border border-blue-900 rounded-md py-2 px-4 text-white"
           onClick={() => setShowAllProjects(false)}
         >
           See Less
