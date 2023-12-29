@@ -1,6 +1,6 @@
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import { FiMail } from "react-icons/fi";
+import { FiMail, FiThumbsUp } from "react-icons/fi";
 
 const Contact = () => {
   const formRef = useRef();
@@ -13,11 +13,12 @@ const Contact = () => {
         "service_wunwgkl",
         "template_kzp2qr6",
         formRef.current,
-        "user_XSpNIRt-SjBfM4Icwsmr3",
+        "APIBdnVaPnB3d3Y4f",
       )
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset();
           setDone(true);
         },
         (error) => {
@@ -55,7 +56,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="w-1/2 flex flex-col gap-4 my-5 rounded-lg text-indigo-700"
+            className="lg:w-1/2 sm:w-full flex flex-col gap-4 my-5 rounded-lg text-indigo-700"
           >
             <input
               type="text"
@@ -78,10 +79,22 @@ const Contact = () => {
               className="w-full border-2 border-blue-600 p-2 rounded-lg mb-4"
               required
             />
-            <button className="bg-indigo-700 hover:bg-indigo-800 border border-blue-900 rounded-lg text-white w-fit flex items-center flex p-2 ml-auto">
-              Submit <FiMail size={20} className="ml-2" />
+            <button
+              className={`bg-indigo-700 hover:bg-indigo-800 border border-blue-900 rounded-lg text-white w-fit flex items-center flex p-2 ml-auto ${
+                done ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+              disabled={done}
+            >
+              {!done ? (
+                <>
+                  Submit <FiMail size={20} className="ml-2" />
+                </>
+              ) : (
+                <>
+                  Email Sent <FiThumbsUp size={20} className="ml-2" />
+                </>
+              )}
             </button>
-            {done && "Thank you..."}
           </form>
         </div>
       </section>
