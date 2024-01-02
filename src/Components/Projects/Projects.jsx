@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import TopCornImage from "../../assets/images/projects/TopCornImage.png";
-import NoteNestImage from "../../assets/images/projects/NoteNestImage.jpg";
-import SportsQuoteGeneratorImage from "../../assets/images/projects/SportsQuoteGeneratorImage.jpg";
-import TypingSpeedTestGameImage from "../../assets/images/projects/TypingSpeedTestGameImage.png";
-import ResumeGeneratorImage from "../../assets/images/projects/ResumeGeneratorImage.jpg";
-import StickyNotesImage from "../../assets/images/projects/StickyNotesImage.jpg";
+import TopCornImage from "../../assets/projects/TopCornImage.png";
+import NoteNestImage from "../../assets/projects/NoteNestImage.jpg";
+import SportsQuoteGeneratorImage from "../../assets/projects/SportsQuoteGeneratorImage.jpg";
+import TypingSpeedTestGameImage from "../../assets/projects/TypingSpeedTestGameImage.png";
+import ResumeGeneratorImage from "../../assets/projects/ResumeGeneratorImage.jpg";
+import StickyNotesImage from "../../assets/projects/StickyNotesImage.jpg";
 
 const projectData = [
   {

@@ -3,27 +3,27 @@ import { Grow } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 
 // Import all logos
-import javaLogo from "../../assets/images/logos/javaLogo.svg";
-import cppLogo from "../../assets/images/logos/cppLogo.svg";
-import cLogo from "../../assets/images/logos/cLogo.svg";
-import pythonLogo from "../../assets/images/logos/pythonLogo.svg";
-import reactjsLogo from "../../assets/images/logos/reactjsLogo.svg";
-import tailwindcssLogo from "../../assets/images/logos/tailwindcssLogo.svg";
-import htmlLogo from "../../assets/images/logos/htmlLogo.svg";
-import cssLogo from "../../assets/images/logos/cssLogo.svg";
-import bootstrapLogo from "../../assets/images/logos/bootstrapLogo.svg";
-import javascriptLogo from "../../assets/images/logos/javascriptLogo.svg";
-import phpLogo from "../../assets/images/logos/phpLogo.svg";
-import mysqlLogo from "../../assets/images/logos/mysqlLogo.svg";
-import androidstudioLogo from "../../assets/images/logos/androidstudioLogo.svg";
-import reactnativeLogo from "../../assets/images/logos/reactnativeLogo.svg";
-import gitLogo from "../../assets/images/logos/gitLogo.svg";
-import githubLogo from "../../assets/images/logos/githubLogo.svg";
-import nodejsLogo from "../../assets/images/logos/nodejsLogo.svg";
-import expressjsLogo from "../../assets/images/logos/expressjsLogo.svg";
-import laravelLogo from "../../assets/images/logos/laravelLogo.svg";
-import typescriptLogo from "../../assets/images/logos/typescriptLogo.svg";
-import latexLogo from "../../assets/images/logos/latexLogo.svg";
+import javaLogo from "../../assets/skills/javaLogo.svg";
+import cppLogo from "../../assets/skills/cppLogo.svg";
+import cLogo from "../../assets/skills/cLogo.svg";
+import pythonLogo from "../../assets/skills/pythonLogo.svg";
+import reactjsLogo from "../../assets/skills/reactjsLogo.svg";
+import tailwindcssLogo from "../../assets/skills/tailwindcssLogo.svg";
+import htmlLogo from "../../assets/skills/htmlLogo.svg";
+import cssLogo from "../../assets/skills/cssLogo.svg";
+import bootstrapLogo from "../../assets/skills/bootstrapLogo.svg";
+import javascriptLogo from "../../assets/skills/javascriptLogo.svg";
+import phpLogo from "../../assets/skills/phpLogo.svg";
+import mysqlLogo from "../../assets/skills/mysqlLogo.svg";
+import androidstudioLogo from "../../assets/skills/androidstudioLogo.svg";
+import reactnativeLogo from "../../assets/skills/reactnativeLogo.svg";
+import gitLogo from "../../assets/skills/gitLogo.svg";
+import githubLogo from "../../assets/skills/githubLogo.svg";
+import nodejsLogo from "../../assets/skills/nodejsLogo.svg";
+import expressjsLogo from "../../assets/skills/expressjsLogo.svg";
+import laravelLogo from "../../assets/skills/laravelLogo.svg";
+import typescriptLogo from "../../assets/skills/typescriptLogo.svg";
+import latexLogo from "../../assets/skills/latexLogo.svg";
 
 const technologies = [
   { name: "Java", logo: javaLogo },

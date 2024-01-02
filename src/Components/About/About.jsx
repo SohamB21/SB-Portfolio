@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import programmer from "../../assets/images/programmer.gif";
+import programmer from "../../assets/media/programmer.gif";
 import {
   MdComputer,
   MdDns,

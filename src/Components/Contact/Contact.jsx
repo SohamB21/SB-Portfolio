@@ -33,14 +33,14 @@ const Contact = () => {
         className="c h-full w-full flex flex-col items-center justify-center py-40 relative"
         style={{ background: "linear-gradient(to right, white, lightblue)" }}
       >
-        <div className="c-left h-screen w-5 bg-blue-600 absolute left-0 rounded-r-full hover:bg-blue-800"></div>
-        <div className="c-right h-screen w-5 bg-blue-600 absolute right-0 rounded-l-full hover:bg-blue-800"></div>
 
         <div className="header pb-10">
           <h1 className="text-3xl font-bold">Contact Me</h1>
         </div>
 
         <div className="c-main w-2/3 p-4 flex flex-col justify-center items-center">
+          <div className="c-left h-screen w-5 bg-blue-600 absolute left-0 rounded-r-full hover:bg-blue-800"></div>
+          <div className="c-right h-screen w-5 bg-blue-600 absolute right-0 rounded-l-full hover:bg-blue-800"></div>
           <p className="text-md justify-center text-center italic">
             For discussions and opportunities, connect with me directly at{" "}
             <br />
