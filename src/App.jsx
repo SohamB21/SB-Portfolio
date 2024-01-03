@@ -4,6 +4,7 @@ import Home from "./Components/Home/Home.jsx";
 import About from "./Components/About/About.jsx";
 import Skills from "./Components/Skills/Skills.jsx";
 import Projects from "./Components/Projects/Projects.jsx";
+import Experience from "./Components/Experience/Experience.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Experience />
       <Contact />
       <Footer />
     </>

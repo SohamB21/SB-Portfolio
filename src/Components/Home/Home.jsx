@@ -8,7 +8,7 @@ import gmail from "../../assets/logos/gmail.png";
 const Home = () => {
   return (
     <div className="flex h-screen i">
-      <div className="flex-1 i-left flex flex-col gap-16 justify-center">
+      <div className="flex-1 i-left flex flex-col gap-20 justify-center">
         <div className="p-10 h-1/2 flex flex-col justify-between">
           <h2 className="text-4xl font-light i-intro">Hello! My name is</h2>
           <h1 className="text-6xl font-semibold i-name">Soham Banik</h1>

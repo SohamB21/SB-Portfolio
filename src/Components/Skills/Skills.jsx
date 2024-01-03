@@ -81,7 +81,7 @@ const TechnologySection = ({ title, technologies }) => {
 
 const Skills = () => (
   <div
-    className="s h-full w-full flex-1 items-center justify-center py-40"
+    className="s h-full w-full flex-1 items-center justify-center py-24"
     style={{ background: "linear-gradient(to right, white, lightblue)" }}
   >
     <div className="h-full flex flex-col items-center justify-center">

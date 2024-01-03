@@ -120,7 +120,7 @@ const Projects = () => {
 
   return (
     <section
-      className="p h-full w-full flex flex-col items-center justify-center py-20"
+      className="p h-full w-full flex flex-col items-center justify-center py-24"
       style={{ background: "linear-gradient(to right, white, lightblue)" }}
     >
       <h1 className="text-3xl font-bold">My Projects</h1>
