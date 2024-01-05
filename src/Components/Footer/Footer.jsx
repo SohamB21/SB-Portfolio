@@ -49,7 +49,6 @@ const Footer = () => {
           Copyright <MdCopyright size={24} /> {new Date().getFullYear()} Soham Banik.
         </span>
         <span> All rights reserved. </span>
-        <span> Designed and developed by Soham Banik. </span>
       </p>
     </footer>
   );
