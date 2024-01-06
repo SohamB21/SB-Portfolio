@@ -12,7 +12,7 @@ import {
 
 const About = () => {
   return (
-    <div className="a h-full flex items-center justify-center pt-40 pb-24">
+    <div id="About" className="a h-full flex items-center justify-center py-24">
       <div className="a-left flex w-1/3 relative items-center justify-center p-5">
         <img
           src={programmer}

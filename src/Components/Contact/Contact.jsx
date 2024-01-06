@@ -29,7 +29,7 @@ const Contact = () => {
 
   return (
     <>
-      <section
+      <section id="Contact"
         className="c h-full w-full flex flex-col items-center justify-center py-24 relative"
         style={{ background: "linear-gradient(to right, white, lightblue)" }}
       >

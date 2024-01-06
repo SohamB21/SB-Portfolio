@@ -81,12 +81,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex-1 i-right relative m-5">
+      <div className="flex-1 i-right relative m-4 mt-12">
         <div className="i-bg h-full w-full absolute flex flex-col items-center justify-center">
           <img
             src={myphoto}
             alt="My Photo"
-            className="i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
+            className="hidden i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
           />
           <p
             style={{

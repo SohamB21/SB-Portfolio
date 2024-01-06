@@ -25,7 +25,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="c h-full w-full flex flex-col items-center justify-center py-24 relative" style={{ background: "linear-gradient(to right, white, lightblue)" }}>
+    <div id="Experience" className="c h-full w-full flex flex-col items-center justify-center py-24 relative" style={{ background: "linear-gradient(to right, white, lightblue)" }}>
       <div className="header pb-10">
         <h1 className="text-3xl font-bold">Experience</h1>
       </div>
@@ -41,7 +41,7 @@ const Experience = () => {
                   border: "1px solid #4338ca",
                   borderRadius: "1.2rem",
                   textAlign: "left",
-                  padding: "1rem",
+                  padding: "1rem 0.8rem",
                 }}
                 contentArrowStyle={{ borderRight: '0.5rem solid #4338ca' }}
                 date={<div className="sm:px-0 md:px-0 lg:px-2 text-black">{item.time}</div>}
