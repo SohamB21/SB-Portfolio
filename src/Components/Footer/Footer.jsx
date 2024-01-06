@@ -26,19 +26,43 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-row flex-wrap gap-4 items-center">
-          <a href="https://github.com/SohamB21" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/SohamB21"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="w-12 h-12 bg-white flex items-center justify-center rounded-full hover:transform hover:scale-110 transition-transform duration-300">
-              <img className="object-contain w-11 h-11 rounded-full" src={github} alt="GitHub" />
+              <img
+                className="object-contain w-11 h-11 rounded-full"
+                src={github}
+                alt="GitHub"
+              />
             </button>
           </a>
-          <a href="https://www.linkedin.com/in/soham-banik-b13909237" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/soham-banik-b13909237"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="w-12 h-12 bg-white flex items-center justify-center rounded-full hover:transform hover:scale-110 transition-transform duration-300">
-              <img className="object-contain w-11 h-11 rounded-full" src={linkedin} alt="LinkedIn" />
+              <img
+                className="object-contain w-11 h-11 rounded-full"
+                src={linkedin}
+                alt="LinkedIn"
+              />
             </button>
           </a>
-          <a href="mailto:soham0110banik@gmail.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="mailto:soham0110banik@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="w-12 h-12 bg-white flex items-center justify-center rounded-full hover:transform hover:scale-110 transition-transform duration-300">
-              <img className="object-contain w-11 h-11 rounded-full" src={gmail} alt="Gmail" />
+              <img
+                className="object-contain w-11 h-11 rounded-full"
+                src={gmail}
+                alt="Gmail"
+              />
             </button>
           </a>
         </div>
@@ -46,7 +70,8 @@ const Footer = () => {
 
       <p className="flex flex-wrap gap-x-2 justify-center w-full bg-blue-800 text-white p-2 items-center text-sm">
         <span className="flex flex-row gap-1 items-center">
-          Copyright <MdCopyright size={24} /> {new Date().getFullYear()} Soham Banik.
+          Copyright <MdCopyright size={24} /> {new Date().getFullYear()} Soham
+          Banik.
         </span>
         <span> All rights reserved. </span>
       </p>
