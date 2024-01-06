@@ -58,7 +58,7 @@ const projectData = [
     altText: "My Portfolio Website",
     description:
       "In place of Sticky Notes, I will show my portfolio as a project after I complete it totally.",
-    languages: ["ReactJS", "Tailwind CSS", "MaterialUI"],
+    languages: ["ReactJS", "Tailwind CSS", "Material UI"],
     deployedLink: "https://soham-banik-portfolio.vercel.app/",
     githubLink: "https://github.com/SohamB21/SB-Portfolio",
   },
@@ -66,7 +66,7 @@ const projectData = [
     imageSrc: StickyNotesImage,
     altText: "Sticky Notes",
     description:
-      "The second project I built after diving into JS. Created it on my PC, but one day the HDD bid farewell, taking the code with it. Bear with the image quality.",
+      "The 2nd project I created on my PC after diving into JS, but one day the HDD bid farewell, taking the code with it. Bear with the image quality.",
     languages: ["JavaScript", "HTML", "CSS"],
     deployedLink: null,
     githubLink: null,

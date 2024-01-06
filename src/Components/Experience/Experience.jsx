@@ -11,12 +11,16 @@ const Experience = () => {
       company: 'Hellbent Software & Educational Services LLP',
       title: 'Junior Software Developer (Intern)',
       description: "I designed and implemented components, incorporated features into the organization's e-commerce platform. Improved web development skills by contributing to development of website components and multiple full-stack live projects for clients, ensuring timely completion of coding requirements.",
+      companyLink: "https://www.linkedin.com/company/hellbent-software-and-educational-services-llp/about/",
+      skills: ["ReactJS", "JavaScript", "PHP", "MySQL"]
     },
     {
       time: 'June 2023 - July 2023',
       company: 'Edunet Foundation - IBM',
       title: 'Data Analytics Intern',
       description: "Enhanced Python skills through the IBM-Edunet-AICTE internship, analyzing the SuperStore Dataset. Conducted thorough data exploration, preprocessing, and predictive modeling for informed decision-making and business optimization.",
+      companyLink: "https://www.linkedin.com/company/edunetfoundation/",
+      skills: ["Python", "Data Analysis"]
     },
   ];
 
@@ -44,9 +48,16 @@ const Experience = () => {
                 iconStyle={{ background: '#4338ca', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                 icon={<img src={briefcase} alt="Briefcase Icon" style={{ width: '50%', padding: '0px' }} />}
               >
-                <h3 className="vertical-timeline-element-title text-xl text-white">{item.company}</h3>
+                <a href={item.companyLink} target="_blank" rel="noopener noreferrer">
+                  <h3 className="vertical-timeline-element-title text-xl text-white">{item.company}</h3>
+                </a>
                 <p className="font-medium italic !mt-0 capitalise">{item.title}</p>
                 <p className="font-medium !mt-1">{item.description}</p>
+                <div className="!mt-1 text-xs flex flex-wrap gap-1">
+                  {item.skills.map((skill, skillIndex) => (
+                    <span key={skillIndex} className="border border-blue-400 p-px px-1 rounded-md">{skill}</span>
+                  ))}
+                </div>
               </VerticalTimelineElement>
             </React.Fragment>
           ))}
