@@ -55,12 +55,21 @@ const projectData = [
   },
   {
     imageSrc: StickyNotesImage,
-    altText: "Sticky Notes",
+    altText: "My Portfolio Website",
     description:
       "In place of Sticky Notes, I will show my portfolio as a project after I complete it totally.",
-    languages: ["JavaScript", "HTML", "CSS"],
+    languages: ["ReactJS", "Tailwind CSS", "MaterialUI"],
     deployedLink: "https://soham-banik-portfolio.vercel.app/",
     githubLink: "https://github.com/SohamB21/SB-Portfolio",
+  },
+  {
+    imageSrc: StickyNotesImage,
+    altText: "Sticky Notes",
+    description:
+      "The second project I built after diving into JS. Created it on my PC, but one day the HDD bid farewell, taking the code with it. Bear with the image quality.",
+    languages: ["JavaScript", "HTML", "CSS"],
+    deployedLink: null,
+    githubLink: null,
   },
 ];
 

@@ -10,7 +10,7 @@ const Footer = () => {
       className="pt-32"
       style={{ background: "linear-gradient(to right, white, lightblue)" }}
     >
-      <hr className="h-1 bg-blue-800 mx-8 rounded-full" />
+      <hr className="h-1 bg-indigo-800 mx-8 rounded-full" />
 
       <div
         className="m-8 p-4 text-white rounded-lg flex flex-row flex-wrap gap-6 justify-between"
@@ -25,7 +25,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex flex-row flex-wrap gap-4 items-center">
+        <div className="flex flex-row gap-4 ml-auto items-center">
           <a
             href="https://github.com/SohamB21"
             target="_blank"

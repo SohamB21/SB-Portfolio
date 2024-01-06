@@ -10,13 +10,13 @@ const Experience = () => {
       time: 'Nov 2023 - Present',
       company: 'Hellbent Software & Educational Services LLP',
       title: 'Junior Software Developer (Intern)',
-      description: 'Worked on various projects involving web development and software solutions.',
+      description: "I designed and implemented components, incorporated features into the organization's e-commerce platform. Improved web development skills by contributing to development of website components and multiple full-stack live projects for clients, ensuring timely completion of coding requirements.",
     },
     {
       time: 'June 2023 - July 2023',
       company: 'Edunet Foundation - IBM',
       title: 'Data Analytics Intern',
-      description: 'Gained hands-on experience in software development and learned new technologies.',
+      description: "Enhanced Python skills through the IBM-Edunet-AICTE internship, analyzing the SuperStore Dataset. Conducted thorough data exploration, preprocessing, and predictive modeling for informed decision-making and business optimization.",
     },
   ];
 
@@ -40,13 +40,13 @@ const Experience = () => {
                   padding: "1rem",
                 }}
                 contentArrowStyle={{ borderRight: '0.5rem solid #4338ca' }}
-                date={<div className="sm:px-0 lg:px-2 text-black">{item.time}</div>}
+                date={<div className="sm:px-0 md:px-0 lg:px-2 text-black">{item.time}</div>}
                 iconStyle={{ background: '#4338ca', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                 icon={<img src={briefcase} alt="Briefcase Icon" style={{ width: '50%', padding: '0px' }} />}
               >
                 <h3 className="vertical-timeline-element-title text-xl text-white">{item.company}</h3>
-                <p className="font-medium italic !mt-0">{item.title}</p>
-                <p className="!mt-1">{item.description}</p>
+                <p className="font-medium italic !mt-0 capitalise">{item.title}</p>
+                <p className="font-medium !mt-1">{item.description}</p>
               </VerticalTimelineElement>
             </React.Fragment>
           ))}

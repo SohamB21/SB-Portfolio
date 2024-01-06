@@ -33,7 +33,7 @@ const Contact = () => {
         className="c h-full w-full flex flex-col items-center justify-center py-24 relative"
         style={{ background: "linear-gradient(to right, white, lightblue)" }}
       >
-        <div className="header pb-10">
+        <div className="header pb-8">
           <h1 className="text-3xl font-bold">Contact Me</h1>
         </div>
 
@@ -61,21 +61,21 @@ const Contact = () => {
               type="text"
               placeholder="Your Name"
               name="user_name"
-              className="w-full border-2 border-blue-600 p-2 rounded-lg my-2"
+              className="w-full border-2 border-indigo-700 p-2 rounded-lg my-2"
               required
             />
             <input
               type="text"
               placeholder="Your Email"
               name="user_email"
-              className="w-full border-2 border-blue-600 p-2 rounded-lg mb-2"
+              className="w-full border-2 border-indigo-700 p-2 rounded-lg mb-2"
               required
             />
             <textarea
               rows="5"
               placeholder="Your Message"
               name="user_message"
-              className="w-full border-2 border-blue-600 p-2 rounded-lg mb-4"
+              className="w-full border-2 border-indigo-700 p-2 rounded-lg mb-4"
               required
             />
             <button
