@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import Button from '@mui/material/Button';
-import { FiMenu, FiMail } from 'react-icons/fi'; // Import React Icons
+import React, { useState, useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
+import Button from "@mui/material/Button";
+import { FiMenu } from "react-icons/fi";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { to: 'About', label: 'About' },
-    { to: 'Skills', label: 'Skills' },
-    { to: 'Projects', label: 'Projects' },
-    { to: 'Experience', label: 'Experience' },
-    { to: 'Contact', label: 'Contact' },
+    { to: "About", label: "About" },
+    { to: "Skills", label: "Skills" },
+    { to: "Projects", label: "Projects" },
+    { to: "Experience", label: "Experience" },
+    { to: "Contact", label: "Contact" },
   ];
 
   const handleToggleMenu = () => {
@@ -25,23 +25,36 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+      setIsMobile(window.innerWidth <= 768);
     };
-
-    handleResize(); // Set initial state
-
-    window.addEventListener('resize', handleResize);
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
-    <AppBar position="fixed" sx={{ boxShadow: 'none', background: 'linear-gradient(to right, white, lightblue)', opacity: "90%" }}>
+    <AppBar
+      position="fixed"
+      sx={{
+        boxShadow: "none",
+        background: "linear-gradient(to right, white, lightblue)",
+        opacity: "90%",
+      }}
+    >
       <Toolbar sx={{ py: 0 }}>
-        <Typography component="div" sx={{ flexGrow: 1, fontFamily: 'whisper', fontWeight: 'bolder', fontSize: { xs: '1.5rem', sm: '2rem' }, color: '#172554' }} className="text-md">
-          Soham Banik
+        <Typography component="div" sx={{ flexGrow: 1 }}>
+          <ScrollLink
+            to="Home"
+            smooth={true}
+            duration={600}
+            className="cursor-pointer text-[#007fff] hover:text-[#0c46bc] text-3xl font-extrabold text-blue-950"
+            style={{ fontFamily: "whisper" }}
+          >
+            Soham Banik
+          </ScrollLink>
         </Typography>
 
         {isMobile ? (
@@ -57,7 +70,13 @@ const Navbar = () => {
         ) : (
           <nav className="flex gap-4">
             {navLinks.map(({ to, label }) => (
-              <ScrollLink key={to} to={to} smooth={true} duration={500} className="cursor-pointer text-[#007fff] hover:text-[#0c46bc]">
+              <ScrollLink
+                key={to}
+                to={to}
+                smooth={true}
+                duration={600}
+                className="cursor-pointer text-[#007fff] hover:text-[#0c46bc]"
+              >
                 {label}
               </ScrollLink>
             ))}
@@ -67,7 +86,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="cursor-pointer text-[#0c46bc] hover:text-[#007fff]"
             >
-             Resume
+              Resume
             </a>
           </nav>
         )}

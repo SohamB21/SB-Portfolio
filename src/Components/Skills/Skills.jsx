@@ -80,7 +80,8 @@ const TechnologySection = ({ title, technologies }) => {
 };
 
 const Skills = () => (
-  <div id="Skills"
+  <div
+    id="Skills"
     className="s h-full w-full flex-1 items-center justify-center pt-24 pb-28"
     style={{ background: "linear-gradient(to right, white, lightblue)" }}
   >

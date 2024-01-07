@@ -128,7 +128,8 @@ const Projects = () => {
     : projectData.slice(0, 4);
 
   return (
-    <section id="Projects"
+    <section
+      id="Projects"
       className="p h-full w-full flex flex-col items-center justify-center py-16"
       style={{ background: "linear-gradient(to right, white, lightblue)" }}
     >
