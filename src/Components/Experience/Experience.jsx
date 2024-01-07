@@ -33,7 +33,6 @@ const Experience = () => {
     <div
       id="Experience"
       className="c h-full w-full flex flex-col items-center justify-center py-24 relative"
-      style={{ background: "linear-gradient(to right, white, lightblue)" }}
     >
       <div className="header pb-10">
         <h1 className="text-3xl font-bold">Experience</h1>

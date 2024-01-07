@@ -83,7 +83,6 @@ const Skills = () => (
   <div
     id="Skills"
     className="s h-full w-full flex-1 items-center justify-center pt-24 pb-28"
-    style={{ background: "linear-gradient(to right, white, lightblue)" }}
   >
     <div className="h-full flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold mb-10">My Skills</h1>

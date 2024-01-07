@@ -131,7 +131,6 @@ const Projects = () => {
     <section
       id="Projects"
       className="p h-full w-full flex flex-col items-center justify-center py-16"
-      style={{ background: "linear-gradient(to right, white, lightblue)" }}
     >
       <h1 className="text-3xl font-bold">My Projects</h1>
       <div className="flex flex-wrap pt-10 pb-4 items-center justify-center">

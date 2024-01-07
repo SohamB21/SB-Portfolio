@@ -6,10 +6,7 @@ import gmail from "../../assets/logos/gmail.png";
 
 const Footer = () => {
   return (
-    <footer
-      className="pt-32"
-      style={{ background: "linear-gradient(to right, white, lightblue)" }}
-    >
+    <footer className="pt-32">
       <hr className="h-1 bg-indigo-800 mx-8 rounded-full" />
 
       <div

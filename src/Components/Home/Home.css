@@ -1,7 +1,3 @@
-.i {
-  background: linear-gradient(to right, white, lightblue);
-}
-
 .i-title-wrapper {
   height: 100%;
   animation: move 5s ease-in-out infinite alternate;

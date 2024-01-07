@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import Home from "./Components/Home/Home.jsx";
@@ -8,10 +8,22 @@ import Projects from "./Components/Projects/Projects.jsx";
 import Experience from "./Components/Experience/Experience.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import ToggleMode from "./Components/ToggleMode/ToggleMode.jsx";
+import { ThemeContext } from "./context.jsx";
 
 function App() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <>
+    <div
+      style={{
+        backgroundColor: darkMode ? "#222" : "white",
+        color: darkMode && "white",
+        background: darkMode
+          ? "linear-gradient(to right, navy, #222)"
+          : "linear-gradient(to right, white, lightblue)",
+      }}
+    >
       <Navbar />
       <Home />
       <About />
@@ -20,7 +32,8 @@ function App() {
       <Experience />
       <Contact />
       <Footer />
-    </>
+      <ToggleMode />
+    </div>
   );
 }
 

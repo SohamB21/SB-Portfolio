@@ -50,7 +50,7 @@ const Navbar = () => {
             to="Home"
             smooth={true}
             duration={600}
-            className="cursor-pointer text-[#007fff] hover:text-[#0c46bc] text-3xl font-extrabold text-blue-950"
+            className="cursor-pointer text-[#007fff] hover:text-[#0c46bc] font-extrabold text-3xl text-blue-950"
             style={{ fontFamily: "whisper" }}
           >
             Soham Banik
