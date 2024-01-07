@@ -77,11 +77,11 @@ const Experience = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <h3 className="vertical-timeline-element-title text-xl text-white">
+                  <h3 className="vertical-timeline-element-title text-xl text-white capitalise">
                     {item.company}
                   </h3>
                 </a>
-                <p className="font-medium italic !mt-0 capitalise">
+                <p className="font-medium text-white italic !mt-0">
                   {item.title}
                 </p>
                 <p className="font-medium !mt-1">{item.description}</p>
@@ -89,7 +89,7 @@ const Experience = () => {
                   {item.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className="border border-blue-400 p-px px-1 rounded-md"
+                      className="border border-indigo-300 p-px px-1 rounded-md"
                     >
                       {skill}
                     </span>

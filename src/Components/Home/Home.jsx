@@ -86,7 +86,7 @@ const Home = () => {
           <img
             src={myphoto}
             alt="My Photo"
-            className="hidden i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
+            className="i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
           />
           <p
             style={{
