@@ -1,31 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+import Button from '@mui/material/Button';
+import { FiMenu, FiMail } from 'react-icons/fi'; // Import React Icons
 
 const Navbar = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [isNavbarVisible, setNavbarVisible] = useState(true);
-
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-    const scrolledDown = currentScrollPos > prevScrollPos && currentScrollPos > 50;
-    setNavbarVisible(!scrolledDown);
-    setPrevScrollPos(currentScrollPos);
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-      const scrolledDown = currentScrollPos > prevScrollPos && currentScrollPos > 50;
-      setNavbarVisible(!scrolledDown);
-      setPrevScrollPos(currentScrollPos);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [prevScrollPos]);
+  const [isMobile, setIsMobile] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
     { to: 'About', label: 'About' },
@@ -35,23 +19,88 @@ const Navbar = () => {
     { to: 'Contact', label: 'Contact' },
   ];
 
+  const handleToggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    };
+
+    handleResize(); // Set initial state
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <header
-      className={`bg-indigo-500 text-blue-900 mx-auto p-2 fixed top-0 w-full z-50 transition-opacity duration-1000 ease-in-out ${
-        isNavbarVisible ? 'opacity-100' : 'hidden'
-      }`}
-      style={{ background: 'linear-gradient(to right, white, lightblue)' }}
-    >
-      <div className="container mx-auto flex justify-center items-center">
-        <nav className="flex space-x-6">
-          {navLinks.map(({ to, label }) => (
-            <ScrollLink key={to} to={to} smooth={true} duration={500} className="cursor-pointer">
-              {label}
-            </ScrollLink>
-          ))}
-        </nav>
-      </div>
-    </header>
+    <AppBar position="fixed" sx={{ boxShadow: 'none', background: 'linear-gradient(to right, white, lightblue)', opacity: "90%" }}>
+      <Toolbar sx={{ py: 0 }}>
+        <Typography component="div" sx={{ flexGrow: 1, fontFamily: 'whisper', fontWeight: 'bolder', fontSize: { xs: '1.5rem', sm: '2rem' }, color: '#172554' }} className="text-md">
+          Soham Banik
+        </Typography>
+
+        {isMobile ? (
+          <IconButton
+            size="large"
+            edge="start"
+            color="#1e40af"
+            aria-label="menu"
+            onClick={handleToggleMenu}
+          >
+            <FiMenu />
+          </IconButton>
+        ) : (
+          <nav className="flex gap-4">
+            {navLinks.map(({ to, label }) => (
+              <ScrollLink key={to} to={to} smooth={true} duration={500} className="cursor-pointer text-[#007fff] hover:text-[#0c46bc]">
+                {label}
+              </ScrollLink>
+            ))}
+            <a
+              href={`https://drive.google.com/file/d/1mTj_3q0z9IjqaJCQNNJAFlnGvuibsPjE/view?usp=drivesdk`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer text-[#0c46bc] hover:text-[#007fff]"
+            >
+             Resume
+            </a>
+          </nav>
+        )}
+      </Toolbar>
+      {menuOpen && (
+        <div className="mobile-menu">
+          <nav className="flex flex-col gap-4 items-center my-1">
+            {navLinks.map(({ to, label }) => (
+              <ScrollLink
+                key={to}
+                to={to}
+                smooth={true}
+                duration={500}
+                className="cursor-pointer text-[#007fff] hover:text-[#0c46bc]"
+                onClick={handleToggleMenu}
+              >
+                {label}
+              </ScrollLink>
+            ))}
+            <Button
+              href={`https://drive.google.com/file/d/1mTj_3q0z9IjqaJCQNNJAFlnGvuibsPjE/view?usp=drivesdk`}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outlined"
+              className="cursor-pointer text-[#0c46bc] hover:text-[#007fff]"
+              onClick={handleToggleMenu}
+            >
+              Resume
+            </Button>
+          </nav>
+        </div>
+      )}
+    </AppBar>
   );
 };
 

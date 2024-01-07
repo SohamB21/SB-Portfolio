@@ -7,7 +7,7 @@ import gmail from "../../assets/logos/gmail.png";
 
 const Home = () => {
   return (
-    <div className="flex h-screen i">
+    <div id="Home" className="flex h-screen i">
       <div className="flex-1 i-left flex flex-col gap-20 justify-center">
         <div className="p-10 h-1/2 flex flex-col justify-between">
           <h2 className="text-4xl font-light i-intro">Hello! My name is</h2>
@@ -81,7 +81,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex-1 i-right relative m-4 mt-12">
+      <div className="flex-1 i-right relative m-5 mt-16">
         <div className="i-bg h-full w-full absolute flex flex-col items-center justify-center">
           <img
             src={myphoto}
