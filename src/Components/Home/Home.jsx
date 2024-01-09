@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import myphoto from "../../assets/media/myphoto.png";
+import myphotosmall from "../../assets/media/myphotosmall.png";
 import github from "../../assets/logos/github.png";
 import linkedin from "../../assets/logos/linkedin.png";
 import gmail from "../../assets/logos/gmail.png";
@@ -21,12 +22,12 @@ const Home = () => {
             Soham Banik
           </h1>
 
-          <div className="lg:hidden md:hidden flex-1 i-right relative items-center justify-center flex">
+          <div className="lg:hidden md:hidden flex-1 i-right relative items-center justify-center flex m-4">
             <div className="h-full w-4/5 absolute flex flex-col items-center justify-center max-h-full relative">
               <img
-                src={myphoto}
+                src={myphotosmall}
                 alt="My Photo"
-                className="i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
+                className="i-img rounded-full shadow-md shadow-blue-500 transition-transform transform hover:scale-110 duration-500"
               />
               <p
                 style={{ fontFamily: "Whisper" }}
