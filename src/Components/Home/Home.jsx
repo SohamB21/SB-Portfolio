@@ -98,19 +98,15 @@ const Home = () => {
       </div>
 
       <div className="flex-1 i-right relative m-5 lg:mt-16 md:mt-16 mt-0">
-        <div className="i-bg h-full w-full absolute flex flex-col items-center justify-center">
+        <div className="i-bg h-full w-full absolute flex flex-col items-center justify-center max-h-full relative">
           <img
             src={myphoto}
             alt="My Photo"
-            className="lg:w-auto md:w-auto w-4/5 i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
+            className="i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
           />
           <p
-            style={{
-              fontFamily: "Whisper",
-              fontSize: "4vw",
-              fontWeight: "bold",
-              color: "#000",
-            }}
+            style={{ fontFamily: "Whisper" }}
+            className="text-4xl font-bold text-black"
           >
             Soham Banik
           </p>
