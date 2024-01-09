@@ -4,12 +4,16 @@ import myphoto from "../../assets/media/myphoto.png";
 import github from "../../assets/logos/github.png";
 import linkedin from "../../assets/logos/linkedin.png";
 import gmail from "../../assets/logos/gmail.png";
+import { Link as ScrollLink } from "react-scroll";
 
 const Home = () => {
   return (
-    <div id="Home" className="flex h-screen i">
-      <div className="flex-1 i-left flex flex-col gap-20 justify-center">
-        <div className="p-10 h-1/2 flex flex-col justify-between">
+    <div
+      id="Home"
+      className="flex lg:flex-row md:flex-row flex-col h-screen i lg:pt-0 md:pt-0 pt-6"
+    >
+      <div className="flex-1 i-left flex flex-col lg:gap-8 md:gap-6 gap-10 justify-center lg:p-10 md:p-8 p-4">
+        <div className="h-1/2 flex flex-col justify-between text-center lg:text-left md:text-left">
           <h2 className="text-4xl font-light i-intro">Hello! My name is</h2>
           <h1 className="text-6xl font-semibold i-name">Soham Banik</h1>
           <div className="i-title h-12 overflow-hidden">
@@ -31,14 +35,22 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <p className="i-desc text-xl">
+          <p className="i-desc lg:text-xl text-lg lg:block md:block hidden">
             I’m an undergraduate with proficiency in Web and Android
             Development, Problem Solving and strong command of Programming
             Fundamentals.
           </p>
         </div>
 
-        <div className="flex flex-row flex-wrap gap-4 px-10">
+        <div className="flex flex-row flex-wrap lg:gap-4 gap-2 lg:justify-start md:justify-start justify-center">
+          <ScrollLink
+            to="Contact"
+            smooth={true}
+            duration={600}
+            className="h-12 cursor-pointer bg-white shadow-md shadow-blue-500 hover:transform hover:scale-110 transition-transform duration-300 rounded-full text-[#0c46bc] font-semibold px-2 flex items-center justify-center"
+          >
+            Get in Touch
+          </ScrollLink>
           <a
             href="https://github.com/SohamB21"
             target="_blank"
@@ -81,12 +93,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex-1 i-right relative m-5 mt-16">
+      <div className="flex-1 i-right relative m-5 lg:mt-16 md:mt-16 mt-0">
         <div className="i-bg h-full w-full absolute flex flex-col items-center justify-center">
           <img
             src={myphoto}
             alt="My Photo"
-            className="hidden i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
+            className="i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
           />
           <p
             style={{

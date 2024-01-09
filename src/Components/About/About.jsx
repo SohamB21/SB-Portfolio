@@ -12,8 +12,11 @@ import {
 
 const About = () => {
   return (
-    <div id="About" className="a h-full flex items-center justify-center py-24">
-      <div className="a-left flex w-1/3 relative items-center justify-center p-5">
+    <div
+      id="About"
+      className="a h-full flex lg:flex-row md:flex-row flex-col-reverse items-center justify-center py-24"
+    >
+      <div className="a-left flex lg:w-1/3 md:w-1/3 relative items-center justify-center p-5">
         <img
           src={programmer}
           alt="Programmer"
@@ -23,8 +26,10 @@ const About = () => {
 
       <div className="a-right flex-1 w-full p-4">
         <div className="aboutMeArea mb-10">
-          <h1 className="text-3xl font-bold mb-2">About Me</h1>
-          <p className="text-xl font-medium">
+          <h1 className="text-3xl font-bold lg:mb-2 md:mb-2 mb-8 lg:text-left md:text-left text-center">
+            About Me
+          </h1>
+          <p className="text-xl font-medium lg:text-left md:text-left text-justify">
             I am pursuing{" "}
             <strong>B.Tech in Computer Science and Engineering</strong> at Swami
             Vivekananda University. Achieving a current{" "}
@@ -45,16 +50,18 @@ const About = () => {
           </p>
         </div>
 
-        <div className="whatIOfferArea flex flex-col">
-          <h1 className="text-3xl font-bold mb-2">What I Offer</h1>
+        <div className="whatIOfferArea flex flex-col lg:text-left md:text-left text-center">
+          <h1 className="text-3xl font-bold lg:mb-2 md:mb-2 mb-8 lg:text-left md:text-left text-center">
+            What I Offer
+          </h1>
 
-          <div className="flex grid grid-cols-3 gap-4">
+          <div className="flex grid lg:grid-cols-3 md:grid-cols-3 lg:gap-4 md:gap-4 gap-2">
             <div className="bg-white p-4 rounded shadow-md shadow-blue-500 mb-2 overflow-auto">
               <h3 className="text-lg font-semibold mb-2 text-[#0c46bc] flex flex-row justify-between">
                 Frontend Development{" "}
                 <MdComputer size={30} className="animate-pulse" />
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-left">
                 I excel in creating beautiful and scalable SPA using{" "}
                 <strong>React.js, Tailwind CSS, HTML and Bootstrap.</strong>
               </p>
@@ -76,7 +83,7 @@ const About = () => {
                 Mobile App Development{" "}
                 <MdSmartphone size={30} className="animate-pulse" />
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-left">
                 I can create mobile apps, using frameworks like{" "}
                 <strong>React Native</strong> to deliver seamless user
                 experience.
@@ -87,7 +94,7 @@ const About = () => {
               <h3 className="text-lg font-semibold mb-2 text-[#0c46bc] flex flex-row justify-between">
                 Problem Solving <MdCode size={30} className="animate-pulse" />
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-left">
                 My goal is to improve DSA skills on competitive platforms like{" "}
                 <strong>GeeksforGeeks and LeetCode.</strong>
               </p>
@@ -97,7 +104,7 @@ const About = () => {
               <h3 className="text-lg font-semibold mb-2 text-[#0c46bc] flex flex-row justify-between">
                 Teaching <MdSchool size={30} className="animate-pulse" />
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-left">
                 I teach computer languages like <strong>Java</strong> and
                 programming basics, to school students.
               </p>
@@ -108,7 +115,7 @@ const About = () => {
                 Collaborative Projects{" "}
                 <MdGroups size={30} className="animate-pulse" />
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-left">
                 I collaborate on development projects, to{" "}
                 <strong>achieve team goals</strong> and{" "}
                 <strong>build impactful solutions.</strong>
