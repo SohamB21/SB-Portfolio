@@ -12,11 +12,15 @@ const Home = () => {
       id="Home"
       className="flex lg:flex-row md:flex-row flex-col h-screen i lg:pt-0 md:pt-0 pt-6"
     >
-      <div className="flex-1 i-left flex flex-col lg:gap-8 md:gap-6 gap-10 justify-center lg:p-10 md:p-8 p-4">
+      <div className="flex-1 i-left flex flex-col gap-10 justify-center lg:p-10 md:p-8 p-4">
         <div className="h-1/2 flex flex-col justify-between text-center lg:text-left md:text-left">
-          <h2 className="text-4xl font-light i-intro">Hello! My name is</h2>
-          <h1 className="text-6xl font-semibold i-name">Soham Banik</h1>
-          <div className="i-title h-12 overflow-hidden">
+          <h2 className="lg:text-4xl md:text-4xl text-3xl font-light i-intro">
+            Hello! My name is
+          </h2>
+          <h1 className="lg:text-6xl md:text-6xl text-5xl font-semibold i-name">
+            Soham Banik
+          </h1>
+          <div className="i-title h-12 overflow-hidden lg:block md:block hidden">
             <div className="h-full i-title-wrapper">
               <div className="h-full i-title-item text-4xl font-bold text-green-700 flex items-center animate-move-delay-1">
                 Web Developer
@@ -35,7 +39,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <p className="i-desc lg:text-xl text-lg lg:block md:block hidden">
+          <p className="i-desc lg:text-xl text-lg">
             I’m an undergraduate with proficiency in Web and Android
             Development, Problem Solving and strong command of Programming
             Fundamentals.
@@ -47,7 +51,7 @@ const Home = () => {
             to="Contact"
             smooth={true}
             duration={600}
-            className="h-12 cursor-pointer bg-white shadow-md shadow-blue-500 hover:transform hover:scale-110 transition-transform duration-300 rounded-full text-[#0c46bc] font-semibold px-2 flex items-center justify-center"
+            className="h-12 cursor-pointer bg-white shadow-md shadow-blue-500 hover:transform hover:scale-110 transition-transform duration-300 rounded-full text-[#0c46bc] font-semibold px-3 flex items-center justify-center"
           >
             Get in Touch
           </ScrollLink>
@@ -98,7 +102,7 @@ const Home = () => {
           <img
             src={myphoto}
             alt="My Photo"
-            className="i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
+            className="lg:w-auto md:w-auto w-4/5 i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
           />
           <p
             style={{

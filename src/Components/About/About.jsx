@@ -20,7 +20,7 @@ const About = () => {
         <img
           src={programmer}
           alt="Programmer"
-          className="w-auto h-auto rounded-3xl shadow-lg shadow-blue-500"
+          className="w-auto h-auto rounded-3xl shadow-md shadow-blue-500"
         />
       </div>
 
@@ -72,7 +72,7 @@ const About = () => {
                 Backend Development{" "}
                 <MdDns size={30} className="animate-pulse" />
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-left">
                 I can manage <strong>databases</strong>, APIs and servers using{" "}
                 <strong>PHP, Node.js</strong> and other widely used frameworks.
               </p>
