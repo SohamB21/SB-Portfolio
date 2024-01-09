@@ -8,12 +8,16 @@ import gmail from "../../assets/logos/gmail.png";
 import { Link as ScrollLink } from "react-scroll";
 
 const Home = () => {
+  const screenHeight = window.innerHeight;
+
   return (
     <div
       id="Home"
-      className="flex lg:flex-row md:flex-row flex-col h-screen i lg:pt-0 md:pt-0 pt-6"
+      className={`i flex lg:flex-row md:flex-row flex-col ${
+        screenHeight < 880 ? "h-auto" : "h-screen"
+      } lg:pt-0 md:pt-0 pt-6`}
     >
-      <div className="flex-1 i-left flex flex-col justify-evenly justify-center lg:p-10 md:p-8 p-4">
+      <div className="flex-1 i-left flex flex-col justify-evenly gap-2 justify-center lg:p-10 md:p-8 p-4 mt-6">
         <div className="h-1/2 flex flex-col justify-between text-center lg:text-left md:text-left">
           <h2 className="lg:text-4xl md:text-4xl text-3xl font-light i-intro">
             Hello! My name is
