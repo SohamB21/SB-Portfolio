@@ -49,7 +49,7 @@ const projectData = [
     imageSrc: ResumeGeneratorImage,
     altText: "Resume Generator",
     description:
-      "This is my personal portfolio website designed and developed",
+      "A user-friendly resume generator featuring a clean 2-column template, bullet fields, an extensive form and default picture feature. This responsive tool highlights skills for enhanced readability. Download resumes in PDF format with ease.",
     languages: ["JavaScript", "HTML", "CSS", "Bootstrap"],
     deployedLink: "https://sohamb21.github.io/Resume-Generator/",
     githubLink: "https://github.com/SohamB21/Resume-Generator",
@@ -58,7 +58,7 @@ const projectData = [
     imageSrc: PortfolioImage,
     altText: "My Portfolio Website",
     description:
-      "In place of Sticky Notes, I will show my portfolio as a project after I complete it totally.",
+      "My portfolio website - a modern and responsive website tailored for presenting my journey in this tech field so far. It showcases my skills, projects, experience and more. Feel free to explore and share your insights.",
     languages: ["ReactJS", "Tailwind CSS", "Material UI"],
     deployedLink: "https://soham-banik-portfolio.vercel.app/",
     githubLink: "https://github.com/SohamB21/SB-Portfolio",

@@ -2,7 +2,7 @@ import React from "react";
 import { Grow } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 
-// Import all logos
+// Import all logos from skillicons github
 import javaLogo from "../../assets/skills/javaLogo.svg";
 import cppLogo from "../../assets/skills/cppLogo.svg";
 import cLogo from "../../assets/skills/cLogo.svg";
@@ -24,6 +24,7 @@ import expressjsLogo from "../../assets/skills/expressjsLogo.svg";
 import laravelLogo from "../../assets/skills/laravelLogo.svg";
 import typescriptLogo from "../../assets/skills/typescriptLogo.svg";
 import latexLogo from "../../assets/skills/latexLogo.svg";
+import figmaLogo from "../../assets/skills/figmaLogo.svg";
 
 const technologies = [
   { name: "Java", logo: javaLogo },
@@ -46,7 +47,7 @@ const technologies = [
   { name: "GitHub", logo: githubLogo },
   { name: "TypeScript", logo: typescriptLogo },
   { name: "Laravel", logo: laravelLogo },
-  { name: "Latex", logo: latexLogo },
+  { name: "Figma", logo: figmaLogo },
 ];
 
 // Reusable TechnologySection component
