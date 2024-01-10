@@ -6,6 +6,7 @@ import myphotosmall from "../../assets/media/myphotosmall.png";
 import github from "../../assets/logos/github.png";
 import linkedin from "../../assets/logos/linkedin.png";
 import gmail from "../../assets/logos/gmail.png";
+import resume from "../../assets/media/resume.svg";
 import { Link as ScrollLink } from "react-scroll";
 import { ThemeContext } from "../../context.jsx";
 
@@ -31,18 +32,12 @@ const Home = () => {
           </h1>
 
           <div className="lg:hidden md:hidden flex-1 i-right relative items-center justify-center flex m-4">
-            <div className="h-full w-4/5 absolute flex flex-col items-center justify-center max-h-full relative">
+            <div className="h-full w-4/5 flex flex-col items-center justify-center max-h-full relative">
               <img
                 src={myphotosmall}
                 alt="My Photo"
                 className="i-img rounded-full shadow-md shadow-blue-500 transition-transform transform hover:scale-110 duration-500"
               />
-              <p
-                style={{ fontFamily: "Whisper" }}
-                className="text-4xl font-bold text-black"
-              >
-                Soham Banik
-              </p>
             </div>
           </div>
 
@@ -73,14 +68,15 @@ const Home = () => {
         </div>
 
         <div className="flex flex-row flex-wrap lg:gap-4 gap-2 lg:justify-start md:justify-start justify-center">
-          <ScrollLink
-            to="Contact"
-            smooth={true}
-            duration={600}
-            className="h-12 cursor-pointer bg-white shadow-md shadow-blue-500 hover:transform hover:scale-110 transition-transform duration-300 rounded-full text-[#0c46bc] font-semibold px-3 flex items-center justify-center"
+          <a
+            href="https://drive.google.com/file/d/1mTj_3q0z9IjqaJCQNNJAFlnGvuibsPjE/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-12 h-12 bg-white shadow-md shadow-blue-500 flex items-center justify-center rounded-full hover:transform hover:scale-110 transition-transform duration-300 p-1"
           >
-            Get in Touch
-          </ScrollLink>
+            <img src={resume} alt="Resume" className="w-8 h-8 p-0 m-0" />
+          </a>
+
           <a
             href="https://github.com/SohamB21"
             target="_blank"

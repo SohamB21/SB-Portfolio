@@ -44,12 +44,12 @@ const Contact = () => {
         <div className="c-main w-2/3 p-4 flex flex-col justify-center items-center">
           <div
             className={`c-left h-full w-5 absolute left-0 rounded-r-full ${
-              darkMode ? "bg-[#ADD8E6]" : "bg-[#1e3a8a]"
+              darkMode ? "bg-[#ADD8E6]" : "bg-[#60a5fa]"
             }`}
           ></div>
           <div
             className={`c-right h-full w-5 absolute right-0 rounded-l-full ${
-              darkMode ? "bg-[#ADD8E6]" : "bg-[#1e3a8a]"
+              darkMode ? "bg-[#ADD8E6]" : "bg-[#60a5fa]"
             }`}
           ></div>
 
@@ -57,7 +57,7 @@ const Contact = () => {
             For discussions and opportunities, connect with me directly at{" "}
             <br />
             <a
-              className={`underline underline-offset-2 text-blue-600 ${
+              className={`underline underline-offset-2 ${
                 darkMode ? "text-[#ADD8E6]" : "text-[#1e3a8a]"
               } hover:text-indigo-700`}
               href="mailto:soham0110banik@gmail.com"
