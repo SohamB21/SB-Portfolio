@@ -1,8 +1,42 @@
-# React + Vite
+# My Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <img src="https://github.com/iamBijoyKar/sih23-prototype-frontend/assets/85790967/2f4ea817-06bd-421c-a04a-65717ac8b23c" alt="Portfolio Logo" />
+  <p>A modern and responsive website tailored for presenting my journey in this tech field so far. It showcases my skills, projects, experience, and more. Feel free to explore and share your insights.</p>
+</div>
 
-Currently, two official plugins are available:
+### Deployed Link: [https://soham-banik-portfolio.vercel.app/](https://soham-banik-portfolio.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+
+### Prerequisites
+Ensure you have Node.js and npm installed on your machine.
+
+## Starting Guide:
+
+### 1. Clone the repository to your local machine using the following command:
+```bash
+git clone "https://github.com/SohamB21/SB-Portfolio"
+```
+
+### 2. Install the required packages using the following command:
+```bash
+npm install
+```
+
+### 3. Run the project using the following command:
+```bash
+npm run dev
+```
+
+Make sure you are in the project folder to run the above commands.
+
+## Contribution
+If you'd like to contribute, please follow the [contribution guidelines](CONTRIBUTING.md).
+
+## License
+This project is licensed under the MIT License.
+
+## Acknowledgments
+Special thanks to the maintainers of Vite, React, and the official plugins for their contributions.
+Feel free to explore and share your feedback! 🚀
