@@ -121,7 +121,7 @@ const Home = () => {
           className="i-bg h-full w-full absolute flex flex-col items-center justify-center max-h-full relative"
           style={{
             background: darkMode
-              ? "linear-gradient(to right, lightblue, #60a5fa)"
+              ? "linear-gradient(to right, white, #60a5fa)"
               : "linear-gradient(to right, #60a5fa, #1e3a8a)",
           }}
         >
