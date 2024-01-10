@@ -1,17 +1,34 @@
 import React from "react";
+import { useContext } from "react";
 import { MdCopyright } from "react-icons/md";
 import github from "../../assets/logos/github.png";
 import linkedin from "../../assets/logos/linkedin.png";
 import gmail from "../../assets/logos/gmail.png";
+import { ThemeContext } from "../../context.jsx";
 
 const Footer = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <footer className="pt-32">
-      <hr className="h-1 bg-indigo-800 mx-8 rounded-full" />
+      <hr
+        className="h-1 bg-indigo-800 mx-8 rounded-full border-0"
+        style={{
+          background: darkMode
+            ? "linear-gradient(to left, white, lightblue)"
+            : "linear-gradient(to right, #60a5fa, #1e3a8a)",
+        }}
+      />
 
       <div
         className="m-8 p-4 text-white rounded-lg flex flex-row flex-wrap gap-6 justify-between"
-        style={{ background: "linear-gradient(to right, #007fff, #0c46bc)" }}
+        style={{
+          background: darkMode
+            ? "linear-gradient(to right, white, lightblue)"
+            : "linear-gradient(to left, #60a5fa, #1e3a8a)",
+          color: darkMode && "#172554",
+        }}
       >
         <div className="flex flex-col gap-2">
           <h1 className="text-5xl font-bold" style={{ fontFamily: "Whisper" }}>

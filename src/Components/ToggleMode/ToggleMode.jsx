@@ -20,9 +20,7 @@ const DarkModeToggle = () => {
           toggleDarkMode();
           handleClick();
         }}
-        className={`flex items-center p-2 ${
-          isDarkMode ? "bg-gray-800" : "bg-blue-500"
-        } rounded-full text-white`}
+        className="flex items-center p-2 bg-[#60a5fa] rounded-full text-white"
       >
         {isDarkMode ? <FiMoon size={24} /> : <FiSun size={24} />}
       </button>
