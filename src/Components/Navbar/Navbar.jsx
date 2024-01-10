@@ -17,6 +17,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
+    { to: "Home", label: "Home" },
     { to: "About", label: "About" },
     { to: "Skills", label: "Skills" },
     { to: "Projects", label: "Projects" },
