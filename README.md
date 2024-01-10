@@ -1,7 +1,6 @@
-# My Portfolio Website
-
 <div align="center">
-  <img src="https://github.com/iamBijoyKar/sih23-prototype-frontend/assets/85790967/2f4ea817-06bd-421c-a04a-65717ac8b23c" alt="Portfolio Logo" />
+  <h1>My Portfolio Website</h1>
+  <img src="[https://github.com/iamBijoyKar/sih23-prototype-frontend/assets/85790967/2f4ea817-06bd-421c-a04a-65717ac8b23c](https://github.com/SohamB21/SB-Portfolio/blob/main/src/assets/projects/PortfolioImage.png)" alt="Portfolio Logo" />
   <p>A modern and responsive website tailored for presenting my journey in this tech field so far. It showcases my skills, projects, experience, and more. Feel free to explore and share your insights.</p>
 </div>
 
