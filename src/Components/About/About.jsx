@@ -29,7 +29,7 @@ const About = () => {
           <h1 className="text-3xl font-bold lg:mb-2 md:mb-2 mb-8 lg:text-left md:text-left text-center">
             About Me
           </h1>
-          <p className="text-xl font-medium lg:text-left md:text-left text-justify">
+          <p className="text-xl font-medium lg:text-left md:text-left text-justify lg:leading-normal md:leading-normal leading-tight">
             I am pursuing{" "}
             <strong>B.Tech in Computer Science and Engineering</strong> at Swami
             Vivekananda University. Achieving a current{" "}

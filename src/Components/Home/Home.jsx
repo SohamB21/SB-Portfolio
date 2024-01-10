@@ -64,7 +64,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="flex flex-row flex-wrap lg:gap-4 gap-2 lg:justify-start md:justify-start justify-center">
+        <div className="flex flex-row flex-wrap gap-4 lg:justify-start md:justify-start justify-center">
           <a
             href="https://drive.google.com/file/d/1mTj_3q0z9IjqaJCQNNJAFlnGvuibsPjE/view?usp=drivesdk"
             target="_blank"

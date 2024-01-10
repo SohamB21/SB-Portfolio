@@ -115,7 +115,9 @@ const Navbar = () => {
                 to={to}
                 smooth={true}
                 duration={500}
-                className="cursor-pointer text-[#007fff] hover:text-[#0c46bc]"
+                className={`cursor-pointer ${
+                  darkMode ? "text-white" : "text-[#007fff]"
+                } hover:text-[#0c46bc]`}
                 onClick={handleToggleMenu}
               >
                 {label}
@@ -126,7 +128,10 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               variant="outlined"
-              className="cursor-pointer text-[#0c46bc] hover:text-[#007fff]"
+              style={{
+                color: darkMode ? "white" : "#007fff",
+                borderColor: darkMode ? "white" : "#007fff",
+              }}
               onClick={handleToggleMenu}
             >
               Resume
