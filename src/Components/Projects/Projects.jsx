@@ -5,6 +5,7 @@ import NoteNestImage from "../../assets/projects/NoteNestImage.jpg";
 import SportsQuoteGeneratorImage from "../../assets/projects/SportsQuoteGeneratorImage.jpg";
 import TypingSpeedTestGameImage from "../../assets/projects/TypingSpeedTestGameImage.png";
 import ResumeGeneratorImage from "../../assets/projects/ResumeGeneratorImage.jpg";
+import PortfolioImage from "../../assets/projects/PortfolioImage.png";
 import StickyNotesImage from "../../assets/projects/StickyNotesImage.jpg";
 
 const projectData = [
@@ -54,7 +55,7 @@ const projectData = [
     githubLink: "https://github.com/SohamB21/Resume-Generator",
   },
   {
-    imageSrc: StickyNotesImage,
+    imageSrc: PortfolioImage,
     altText: "My Portfolio Website",
     description:
       "In place of Sticky Notes, I will show my portfolio as a project after I complete it totally.",
