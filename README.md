@@ -31,11 +31,8 @@ npm run dev
 Make sure you are in the project folder to run the above commands.
 
 ## Contribution
-If you'd like to contribute, please follow the [contribution guidelines](CONTRIBUTING.md).
-
-## License
-This project is licensed under the MIT License.
+If you'd like to contribute, please follow the contribution guidelines.
 
 ## Acknowledgments
-Special thanks to the maintainers of Vite, React, and the official plugins for their contributions.
+Special thanks to the maintainers of Vite, React, Vercel and the official plugins for their contributions.
 Feel free to explore and share your feedback! 🚀
