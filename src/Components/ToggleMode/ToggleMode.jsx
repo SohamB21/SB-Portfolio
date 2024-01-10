@@ -25,9 +25,9 @@ const DarkModeToggle = () => {
         } rounded-full text-black opacity-90 shadow-sm shadow-gray-500`}
       >
         {isDarkMode ? (
-          <FiMoon size={24} style={{ animation: "pulse 3s infinite" }} />
+          <FiMoon size={24} className="motion-safe:animate-pulse duration-1000" />
         ) : (
-          <FiSun size={24} style={{ animation: "spin 10s linear infinite" }} />
+          <FiSun size={24} className="motion-safe:animate-spin duration-1000" />
         )}
       </button>
     </div>
