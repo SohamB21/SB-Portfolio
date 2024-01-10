@@ -49,7 +49,7 @@ const projectData = [
     imageSrc: ResumeGeneratorImage,
     altText: "Resume Generator",
     description:
-      "A user-friendly resume generator featuring a clean 2-column template, bullet fields, an extensive form and default picture feature. This responsive tool highlights skills for enhanced readability. Download resumes in PDF format with ease.",
+      "This is my personal portfolio website designed and developed",
     languages: ["JavaScript", "HTML", "CSS", "Bootstrap"],
     deployedLink: "https://sohamb21.github.io/Resume-Generator/",
     githubLink: "https://github.com/SohamB21/Resume-Generator",
