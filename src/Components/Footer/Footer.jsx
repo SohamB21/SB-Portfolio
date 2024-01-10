@@ -16,7 +16,7 @@ const Footer = () => {
         className="h-1 bg-indigo-800 mx-8 rounded-full border-0"
         style={{
           background: darkMode
-            ? "linear-gradient(to left, white, lightblue)"
+            ? "linear-gradient(to left, white, #60a5fa)"
             : "linear-gradient(to right, #60a5fa, #1e3a8a)",
         }}
       />
@@ -25,7 +25,7 @@ const Footer = () => {
         className="m-8 p-4 text-white rounded-lg flex flex-row flex-wrap gap-6 justify-between"
         style={{
           background: darkMode
-            ? "linear-gradient(to right, white, lightblue)"
+            ? "linear-gradient(to right, white, #60a5fa)"
             : "linear-gradient(to left, #60a5fa, #1e3a8a)",
           color: darkMode && "#172554",
         }}

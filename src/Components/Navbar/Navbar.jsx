@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useContext } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -6,8 +7,12 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import { FiMenu } from "react-icons/fi";
+import { ThemeContext } from "../../context.jsx";
 
 const Navbar = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -40,8 +45,12 @@ const Navbar = () => {
       position="fixed"
       sx={{
         boxShadow: "none",
-        background: "linear-gradient(to right, white, lightblue)",
         opacity: "90%",
+      }}
+      style={{
+        background: darkMode
+          ? "linear-gradient(to right, #60a5fa, #1e3a8a)"
+          : "linear-gradient(to right, white, lightblue)",
       }}
     >
       <Toolbar sx={{ py: 0 }}>
@@ -50,7 +59,9 @@ const Navbar = () => {
             to="Home"
             smooth={true}
             duration={600}
-            className="cursor-pointer text-[#007fff] hover:text-[#0c46bc] font-extrabold text-3xl text-blue-950"
+            className={`cursor-pointer text-[#007fff] hover:text-[#0c46bc] font-extrabold text-3xl ${
+              darkMode ? "text-white" : "text-blue-950"
+            }`}
             style={{ fontFamily: "whisper" }}
           >
             Soham Banik
@@ -75,7 +86,9 @@ const Navbar = () => {
                 to={to}
                 smooth={true}
                 duration={600}
-                className="cursor-pointer text-[#007fff] hover:text-[#0c46bc]"
+                className={`cursor-pointer ${
+                  darkMode ? "text-[#ADD8E6]" : "text-blue-950"
+                } hover:text-[#0c46bc]`}
               >
                 {label}
               </ScrollLink>
@@ -84,7 +97,9 @@ const Navbar = () => {
               href={`https://drive.google.com/file/d/1mTj_3q0z9IjqaJCQNNJAFlnGvuibsPjE/view?usp=drivesdk`}
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer text-[#0c46bc] hover:text-[#007fff]"
+              className={`cursor-pointer ${
+                darkMode ? "text-white" : "text-[#0c46bc]"
+              } hover:text-[#007fff]`}
             >
               Resume
             </a>

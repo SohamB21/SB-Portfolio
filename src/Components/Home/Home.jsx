@@ -1,4 +1,5 @@
 import React from "react";
+import { useContext } from "react";
 import "./Home.css";
 import myphoto from "../../assets/media/myphoto.png";
 import myphotosmall from "../../assets/media/myphotosmall.png";
@@ -6,8 +7,11 @@ import github from "../../assets/logos/github.png";
 import linkedin from "../../assets/logos/linkedin.png";
 import gmail from "../../assets/logos/gmail.png";
 import { Link as ScrollLink } from "react-scroll";
+import { ThemeContext } from "../../context.jsx";
 
 const Home = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   const screenHeight = window.innerHeight;
 
   return (
@@ -120,7 +124,14 @@ const Home = () => {
       </div>
 
       <div className="lg:block md:block hidden flex-1 i-right relative m-5 lg:mt-16 md:mt-16 mt-0">
-        <div className="i-bg h-full w-full absolute flex flex-col items-center justify-center max-h-full relative">
+        <div
+          className="i-bg h-full w-full absolute flex flex-col items-center justify-center max-h-full relative"
+          style={{
+            background: darkMode
+              ? "linear-gradient(to right, lightblue, #60a5fa)"
+              : "linear-gradient(to right, #60a5fa, #1e3a8a)",
+          }}
+        >
           <img
             src={myphoto}
             alt="My Photo"

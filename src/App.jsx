@@ -20,8 +20,7 @@ function App() {
         backgroundColor: darkMode ? "#222" : "white",
         color: darkMode && "white",
         background: darkMode
-          ? // ? "linear-gradient(to right, #182B3A, #20A4F3)"
-            "linear-gradient(to right, #60a5fa, #1e3a8a)"
+          ? "linear-gradient(to right, #60a5fa, #1e3a8a)"
           : "linear-gradient(to right, white, lightblue)",
       }}
     >

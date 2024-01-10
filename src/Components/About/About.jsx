@@ -20,7 +20,7 @@ const About = () => {
         <img
           src={programmer}
           alt="Programmer"
-          className="w-auto h-auto rounded-3xl shadow-md shadow-blue-500"
+          className="lg:w-auto md:w-auto w-4/5 h-auto rounded-3xl shadow-md shadow-blue-500"
         />
       </div>
 
@@ -56,7 +56,7 @@ const About = () => {
           </h1>
 
           <div className="flex grid lg:grid-cols-3 md:grid-cols-3 lg:gap-4 md:gap-4 gap-2">
-            <div className="bg-white p-4 rounded shadow-md shadow-blue-500 mb-2 overflow-auto">
+            <div className="bg-white p-4 rounded-md shadow-md shadow-blue-500 mb-2 overflow-auto">
               <h3 className="text-lg font-semibold mb-2 text-[#0c46bc] flex flex-row justify-between">
                 Frontend Development{" "}
                 <MdComputer size={30} className="animate-pulse" />
@@ -67,7 +67,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-white p-4 rounded shadow-md shadow-blue-500 mb-2 overflow-auto">
+            <div className="bg-white p-4 rounded-md shadow-md shadow-blue-500 mb-2 overflow-auto">
               <h3 className="text-lg font-semibold mb-2 text-[#0c46bc] flex flex-row justify-between">
                 Backend Development{" "}
                 <MdDns size={30} className="animate-pulse" />
@@ -78,7 +78,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-white p-4 rounded shadow-md shadow-blue-500 mb-2 overflow-auto">
+            <div className="bg-white p-4 rounded-md shadow-md shadow-blue-500 mb-2 overflow-auto">
               <h3 className="text-lg font-semibold mb-2 text-[#0c46bc] flex flex-row justify-between">
                 Mobile App Development{" "}
                 <MdSmartphone size={30} className="animate-pulse" />
@@ -90,7 +90,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-white p-4 rounded shadow-md shadow-blue-500 mb-2 overflow-auto">
+            <div className="bg-white p-4 rounded-md shadow-md shadow-blue-500 mb-2 overflow-auto">
               <h3 className="text-lg font-semibold mb-2 text-[#0c46bc] flex flex-row justify-between">
                 Problem Solving <MdCode size={30} className="animate-pulse" />
               </h3>
@@ -100,7 +100,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-white p-4 rounded shadow-md shadow-blue-500 mb-2 overflow-auto">
+            <div className="bg-white p-4 rounded-md shadow-md shadow-blue-500 mb-2 overflow-auto">
               <h3 className="text-lg font-semibold mb-2 text-[#0c46bc] flex flex-row justify-between">
                 Teaching <MdSchool size={30} className="animate-pulse" />
               </h3>
@@ -110,7 +110,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-white p-4 rounded shadow-md shadow-blue-500 mb-2 overflow-auto">
+            <div className="bg-white p-4 rounded-md shadow-md shadow-blue-500 mb-2 overflow-auto">
               <h3 className="text-lg font-semibold mb-2 text-[#0c46bc] flex flex-row justify-between">
                 Collaborative Projects{" "}
                 <MdGroups size={30} className="animate-pulse" />

@@ -1,11 +1,15 @@
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { FiMail, FiThumbsUp } from "react-icons/fi";
+import { ThemeContext } from "../../context.jsx";
 
 const Contact = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   const formRef = useRef();
   const [done, setDone] = useState(false);
-  //
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -38,13 +42,24 @@ const Contact = () => {
         </div>
 
         <div className="c-main w-2/3 p-4 flex flex-col justify-center items-center">
-          <div className="c-left h-full w-5 bg-blue-600 absolute left-0 rounded-r-full hover:bg-blue-800"></div>
-          <div className="c-right h-full w-5 bg-blue-600 absolute right-0 rounded-l-full hover:bg-blue-800"></div>
+          <div
+            className={`c-left h-full w-5 absolute left-0 rounded-r-full ${
+              darkMode ? "bg-[#ADD8E6]" : "bg-[#1e3a8a]"
+            }`}
+          ></div>
+          <div
+            className={`c-right h-full w-5 absolute right-0 rounded-l-full ${
+              darkMode ? "bg-[#ADD8E6]" : "bg-[#1e3a8a]"
+            }`}
+          ></div>
+
           <p className="text-md justify-center text-center italic">
             For discussions and opportunities, connect with me directly at{" "}
             <br />
             <a
-              className="underline underline-offset-2 text-blue-600 hover:text-indigo-700"
+              className={`underline underline-offset-2 text-blue-600 ${
+                darkMode ? "text-[#ADD8E6]" : "text-[#1e3a8a]"
+              } hover:text-indigo-700`}
               href="mailto:soham0110banik@gmail.com"
             >
               soham0110banik@gmail.com
@@ -55,7 +70,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="lg:w-1/2 sm:w-full flex flex-col gap-4 my-5 rounded-lg text-indigo-700"
+            className="lg:w-1/2 w-full flex flex-col gap-4 my-5 rounded-lg text-indigo-700"
           >
             <input
               type="text"
