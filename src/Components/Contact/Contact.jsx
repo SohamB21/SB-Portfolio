@@ -44,12 +44,12 @@ const Contact = () => {
         <div className="c-main w-2/3 p-4 flex flex-col justify-center items-center">
           <div
             className={`c-left h-full w-5 absolute left-0 rounded-r-full ${
-              darkMode ? "bg-[#ADD8E6]" : "bg-[#60a5fa]"
+              darkMode ? "bg-[#4f46e5]" : "bg-[#60a5fa]"
             }`}
           ></div>
           <div
             className={`c-right h-full w-5 absolute right-0 rounded-l-full ${
-              darkMode ? "bg-[#ADD8E6]" : "bg-[#60a5fa]"
+              darkMode ? "bg-[#4f46e5]" : "bg-[#60a5fa]"
             }`}
           ></div>
 
