@@ -20,9 +20,18 @@ const DarkModeToggle = () => {
           toggleDarkMode();
           handleClick();
         }}
-        className="flex items-center p-2 bg-[#60a5fa] rounded-full text-white"
+        className={`flex items-center p-2 ${
+          isDarkMode ? "bg-[#1e3a8a]" : "bg-[lightblue]"
+        } rounded-full text-black opacity-90 shadow-sm shadow-gray-500`}
       >
-        {isDarkMode ? <FiMoon size={24} /> : <FiSun size={24} />}
+        {isDarkMode ? (
+          <FiMoon
+            size={24}
+            className="motion-safe:animate-pulse duration-1000"
+          />
+        ) : (
+          <FiSun size={24} style={{ animation: "spin 15s linear infinite" }} />
+        )}
       </button>
     </div>
   );
