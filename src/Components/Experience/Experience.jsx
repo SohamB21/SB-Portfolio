@@ -16,7 +16,7 @@ const Experience = () => {
         "I designed and implemented components, incorporated features into the organization's e-commerce platform. Improved web development skills by contributing to development of website components and multiple full-stack live projects for clients, ensuring timely completion of coding requirements.",
       companyLink:
         "https://www.linkedin.com/company/hellbent-software-and-educational-services-llp/about/",
-      skills: ["ReactJS", "JavaScript", "PHP", "MySQL"],
+      skills: ["ReactJS", "JavaScript", "PHP", "NodeJS", "MySQL"],
     },
     {
       time: "June 2023 - July 2023",

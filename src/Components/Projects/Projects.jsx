@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import FanaticsImage from "../../assets/projects/FanaticsImage.jpg";
 import TopCornImage from "../../assets/projects/TopCornImage.png";
 import NoteNestImage from "../../assets/projects/NoteNestImage.jpg";
 import SportsQuoteGeneratorImage from "../../assets/projects/SportsQuoteGeneratorImage.jpg";
@@ -9,6 +10,15 @@ import PortfolioImage from "../../assets/projects/PortfolioImage.png";
 import StickyNotesImage from "../../assets/projects/StickyNotesImage.jpg";
 
 const projectData = [
+  {
+    imageSrc: FanaticsImage,
+    altText: "Fanatics",
+    description:
+      "Fanatics is a passion project made using the MERN stack by a sports fan for fellow enthusiasts. Here you can explore a wide range of sports apparel and fan gear. With Fanatics, you can seamlessly buy, sell, upload and manage your own jerseys.",
+    languages: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS", "Firebase"],
+    deployedLink: "https://fanatics-mern.vercel.app/",
+    githubLink: "https://github.com/SohamB21/Fanatics-Frontend",
+  },
   {
     imageSrc: TopCornImage,
     altText: "TopCorn",

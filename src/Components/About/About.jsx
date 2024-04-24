@@ -74,7 +74,7 @@ const About = () => {
               </h3>
               <p className="text-gray-600 text-left">
                 I can manage <strong>databases</strong>, APIs and servers using{" "}
-                <strong>PHP, Node.js</strong> and other widely used frameworks.
+                <strong>PHP, NodeJS, Express</strong> and other widely used frameworks.
               </p>
             </div>
 

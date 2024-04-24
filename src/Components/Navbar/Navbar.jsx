@@ -95,7 +95,7 @@ const Navbar = () => {
               </ScrollLink>
             ))}
             <a
-              href={`https://drive.google.com/file/d/1mTj_3q0z9IjqaJCQNNJAFlnGvuibsPjE/view?usp=drivesdk`}
+              href={`https://drive.google.com/file/d/1-RoDwqJrYq0IMNE-MOIDiBUBZ6bmgUFi/view?usp=sharing`}
               target="_blank"
               rel="noopener noreferrer"
               className={`cursor-pointer ${
@@ -125,7 +125,7 @@ const Navbar = () => {
               </ScrollLink>
             ))}
             <Button
-              href={`https://drive.google.com/file/d/1mTj_3q0z9IjqaJCQNNJAFlnGvuibsPjE/view?usp=drivesdk`}
+              href={`https://drive.google.com/file/d/1-RoDwqJrYq0IMNE-MOIDiBUBZ6bmgUFi/view?usp=sharing`}
               target="_blank"
               rel="noopener noreferrer"
               variant="outlined"

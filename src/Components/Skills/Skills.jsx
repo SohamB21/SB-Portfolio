@@ -3,51 +3,69 @@ import { Grow } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 
 // Import all logos from skillicons github
+// https://github.com/tandpfun/skill-icons?tab=readme-ov-file#readme
 import javaLogo from "../../assets/skills/javaLogo.svg";
 import cppLogo from "../../assets/skills/cppLogo.svg";
 import cLogo from "../../assets/skills/cLogo.svg";
 import pythonLogo from "../../assets/skills/pythonLogo.svg";
+
 import reactjsLogo from "../../assets/skills/reactjsLogo.svg";
-import tailwindcssLogo from "../../assets/skills/tailwindcssLogo.svg";
 import htmlLogo from "../../assets/skills/htmlLogo.svg";
 import cssLogo from "../../assets/skills/cssLogo.svg";
-import bootstrapLogo from "../../assets/skills/bootstrapLogo.svg";
 import javascriptLogo from "../../assets/skills/javascriptLogo.svg";
+import tailwindcssLogo from "../../assets/skills/tailwindcssLogo.svg";
+import bootstrapLogo from "../../assets/skills/bootstrapLogo.svg";
+import materialuiLogo from "../../assets/skills/materialuiLogo.svg";
+
 import phpLogo from "../../assets/skills/phpLogo.svg";
-import mysqlLogo from "../../assets/skills/mysqlLogo.svg";
-import androidstudioLogo from "../../assets/skills/androidstudioLogo.svg";
-import reactnativeLogo from "../../assets/skills/reactnativeLogo.svg";
-import gitLogo from "../../assets/skills/gitLogo.svg";
-import githubLogo from "../../assets/skills/githubLogo.svg";
 import nodejsLogo from "../../assets/skills/nodejsLogo.svg";
 import expressjsLogo from "../../assets/skills/expressjsLogo.svg";
-import laravelLogo from "../../assets/skills/laravelLogo.svg";
+import mysqlLogo from "../../assets/skills/mysqlLogo.svg";
+import mongodbLogo from "../../assets/skills/mongodbLogo.svg";
+
+import firebaseLogo from "../../assets/skills/firebaseLogo.svg";
+import androidstudioLogo from "../../assets/skills/androidstudioLogo.svg";
+import reactnativeLogo from "../../assets/skills/reactnativeLogo.svg";
+
+import gitLogo from "../../assets/skills/gitLogo.svg";
+import githubLogo from "../../assets/skills/githubLogo.svg";
+
 import typescriptLogo from "../../assets/skills/typescriptLogo.svg";
-import latexLogo from "../../assets/skills/latexLogo.svg";
 import figmaLogo from "../../assets/skills/figmaLogo.svg";
+import laravelLogo from "../../assets/skills/laravelLogo.svg";
+import latexLogo from "../../assets/skills/latexLogo.svg";
 
 const technologies = [
   { name: "Java", logo: javaLogo },
   { name: "C++", logo: cppLogo },
   { name: "C", logo: cLogo },
   { name: "Python", logo: pythonLogo },
+
   { name: "ReactJS", logo: reactjsLogo },
-  { name: "Tailwind CSS", logo: tailwindcssLogo },
   { name: "HTML", logo: htmlLogo },
   { name: "CSS", logo: cssLogo },
-  { name: "Bootstrap", logo: bootstrapLogo },
   { name: "JavaScript", logo: javascriptLogo },
+  { name: "Tailwind CSS", logo: tailwindcssLogo },
+  { name: "Bootstrap", logo: bootstrapLogo },
+  { name: "Material UI", logo: materialuiLogo },
+
   { name: "PHP", logo: phpLogo },
-  { name: "MySQL", logo: mysqlLogo },
   { name: "NodeJS", logo: nodejsLogo },
   { name: "ExpressJS", logo: expressjsLogo },
+  { name: "MySQL", logo: mysqlLogo },
+  { name: "MongoDB", logo: mongodbLogo },
+
+  { name: "Firebase", logo: firebaseLogo },
   { name: "Android Studio", logo: androidstudioLogo },
   { name: "React Native", logo: reactnativeLogo },
+
   { name: "Git", logo: gitLogo },
   { name: "GitHub", logo: githubLogo },
+
   { name: "TypeScript", logo: typescriptLogo },
-  { name: "Laravel", logo: laravelLogo },
   { name: "Figma", logo: figmaLogo },
+  { name: "Laravel", logo: laravelLogo },
+  { name: "Latex", logo: latexLogo },
 ];
 
 // Reusable TechnologySection component
@@ -93,23 +111,23 @@ const Skills = () => (
       />
       <TechnologySection
         title="Frontend Technologies"
-        technologies={technologies.slice(4, 10)}
+        technologies={technologies.slice(4, 11)}
       />
       <TechnologySection
         title="Backend Technologies"
-        technologies={technologies.slice(10, 14)}
+        technologies={technologies.slice(11, 16)}
       />
       <TechnologySection
         title="Mobile App Development"
-        technologies={technologies.slice(14, 16)}
+        technologies={technologies.slice(16, 19)}
       />
       <TechnologySection
         title="Version Control Tools"
-        technologies={technologies.slice(16, 18)}
+        technologies={technologies.slice(19, 21)}
       />
       <TechnologySection
         title="Technologies I'm Familiar With"
-        technologies={technologies.slice(18)}
+        technologies={technologies.slice(21)}
       />
     </div>
   </div>
