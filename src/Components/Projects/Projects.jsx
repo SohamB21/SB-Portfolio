@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import FanaticsImage from "../../assets/projects/FanaticsImage.jpg";
+import PepperSprayImage from "../../assets/projects/PepperSprayImage.png";
 import TopCornImage from "../../assets/projects/TopCornImage.png";
 import NoteNestImage from "../../assets/projects/NoteNestImage.jpg";
 import SportsQuoteGeneratorImage from "../../assets/projects/SportsQuoteGeneratorImage.jpg";
@@ -18,6 +19,15 @@ const projectData = [
     languages: ["MongoDB", "ExpressJS", "ReactJS", "NodeJS", "Firebase"],
     deployedLink: "https://fanatics-mern.vercel.app/",
     githubLink: "https://github.com/SohamB21/Fanatics-Frontend",
+  },
+  {
+    imageSrc: PepperSprayImage,
+    altText: "PepperSpray",
+    description:
+      "An app designed for the safety of women with helpful inclusive design. It detects danger zones, provides real-time danger percentages and offers community platform for sharing experiences and advices along with a badge system.",
+    languages: ["React Native", "TypeScript", "Figma", "MongoDB", "ExpressJS"],
+    deployedLink: null,
+    githubLink: "https://github.com/SohamB21/PepperSpray-App",
   },
   {
     imageSrc: TopCornImage,
