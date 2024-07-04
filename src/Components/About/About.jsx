@@ -35,9 +35,8 @@ const About = () => {
             Vivekananda University. Achieving a current{" "}
             <strong>CGPA of 9.10</strong> till the 4th year of my course, I
             bring a strong academic foundation. Currently, I am{" "}
-            <strong>SDE intern</strong> at{" "}
-            <strong>Onlighten Media</strong>, where
-            I work on full-stack projects using various technologies like{" "}
+            <strong>SDE intern</strong> at <strong>Onlighten Media</strong>,
+            where I work on full-stack projects using various technologies like{" "}
             <strong>CodeIgniter, PHP and MySQL</strong>.
             <br /> <br />
             Passionate about <strong>problem-solving</strong> and participating
@@ -74,7 +73,8 @@ const About = () => {
               </h3>
               <p className="text-gray-600 text-left">
                 I can manage <strong>databases</strong>, APIs and servers using{" "}
-                <strong>PHP, NodeJS, Express</strong> and other widely used frameworks.
+                <strong>PHP, NodeJS, Express</strong> and other widely used
+                frameworks.
               </p>
             </div>
 
