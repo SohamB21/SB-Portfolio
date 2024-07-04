@@ -18,6 +18,7 @@ import bootstrapLogo from "../../assets/skills/bootstrapLogo.svg";
 import materialuiLogo from "../../assets/skills/materialuiLogo.svg";
 
 import phpLogo from "../../assets/skills/phpLogo.svg";
+import codeigniterLogo from "../../assets/skills/codeigniterLogo.svg";
 import nodejsLogo from "../../assets/skills/nodejsLogo.svg";
 import expressjsLogo from "../../assets/skills/expressjsLogo.svg";
 import mysqlLogo from "../../assets/skills/mysqlLogo.svg";
@@ -50,6 +51,7 @@ const technologies = [
   { name: "Material UI", logo: materialuiLogo },
 
   { name: "PHP", logo: phpLogo },
+  { name: "CodeIgniter", logo: codeigniterLogo },
   { name: "NodeJS", logo: nodejsLogo },
   { name: "ExpressJS", logo: expressjsLogo },
   { name: "MySQL", logo: mysqlLogo },
@@ -115,19 +117,19 @@ const Skills = () => (
       />
       <TechnologySection
         title="Backend Technologies"
-        technologies={technologies.slice(11, 16)}
+        technologies={technologies.slice(11, 17)}
       />
       <TechnologySection
         title="Mobile App Development"
-        technologies={technologies.slice(16, 19)}
+        technologies={technologies.slice(17, 20)}
       />
       <TechnologySection
         title="Version Control Tools"
-        technologies={technologies.slice(19, 21)}
+        technologies={technologies.slice(20, 22)}
       />
       <TechnologySection
         title="Technologies I'm Familiar With"
-        technologies={technologies.slice(21)}
+        technologies={technologies.slice(22)}
       />
     </div>
   </div>

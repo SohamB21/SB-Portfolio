@@ -9,13 +9,23 @@ import briefcase from "../../assets/media/briefcase.svg";
 const Experience = () => {
   const experienceData = [
     {
-      time: "Nov 2023 - Present",
+      time: "Jul 2024 - Present",
+      company: "Onlighten Media",
+      title: "PHP Developer Intern",
+      description:
+        "My role involves continuous learning and practical implementation. I benefit from a collaborative environment with a supportive team and working closely with senior developers has significantly enhanced my skills and understanding of web development best practices.",
+      companyLink:
+        "https://www.linkedin.com/company/onlighten-media/",
+      skills: ["CodeIgniter", "PHP", "MySQL", "Web Development"],
+    },
+    {
+      time: "Nov 2023 - Jun 2024",
       company: "Hellbent Software & Educational Services LLP",
       title: "Junior Software Developer (Intern)",
       description:
         "I designed and implemented components, incorporated features into the organization's e-commerce platform. Improved web development skills by contributing to development of website components and multiple full-stack live projects for clients, ensuring timely completion of coding requirements.",
       companyLink:
-        "https://www.linkedin.com/company/hellbent-software-and-educational-services-llp/about/",
+        "https://www.linkedin.com/company/hellbent-software-and-educational-services-llp/",
       skills: ["ReactJS", "JavaScript", "PHP", "NodeJS", "MySQL"],
     },
     {
@@ -88,7 +98,7 @@ const Experience = () => {
                   {item.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className="border border-indigo-300 p-px px-1 rounded-md"
+                      className="border border-indigo-300 hover:border-white duration-500 p-px px-1 rounded-md"
                     >
                       {skill}
                     </span>

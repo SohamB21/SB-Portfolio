@@ -33,12 +33,12 @@ const About = () => {
             I am pursuing{" "}
             <strong>B.Tech in Computer Science and Engineering</strong> at Swami
             Vivekananda University. Achieving a current{" "}
-            <strong>CGPA of 9.10</strong> till the 3rd year of my course, I
+            <strong>CGPA of 9.10</strong> till the 4th year of my course, I
             bring a strong academic foundation. Currently, I am{" "}
             <strong>SDE intern</strong> at{" "}
-            <strong>Hellbent Software & Educational Services LLP</strong>, where
+            <strong>Onlighten Media</strong>, where
             I work on full-stack projects using various technologies like{" "}
-            <strong>ReactJS, PHP and MERN stack</strong>.
+            <strong>CodeIgniter, PHP and MySQL</strong>.
             <br /> <br />
             Passionate about <strong>problem-solving</strong> and participating
             in <strong>programming contests</strong> and competitions, I thrive
