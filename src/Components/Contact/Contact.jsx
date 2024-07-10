@@ -2,6 +2,7 @@ import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { FiMail, FiThumbsUp } from "react-icons/fi";
 import { ThemeContext } from "../../context.jsx";
+import { LINKS } from "../../assets/constants/links.js";
 
 const Contact = () => {
   const theme = useContext(ThemeContext);
@@ -43,26 +44,23 @@ const Contact = () => {
 
         <div className="c-main w-2/3 p-4 flex flex-col justify-center items-center">
           <div
-            className={`c-left h-full w-5 absolute left-0 rounded-r-full ${
-              darkMode ? "bg-[#4f46e5]" : "bg-[#60a5fa]"
-            }`}
+            className={`c-left h-full w-5 absolute left-0 rounded-r-full ${darkMode ? "bg-[#4f46e5]" : "bg-[#60a5fa]"
+              }`}
           ></div>
           <div
-            className={`c-right h-full w-5 absolute right-0 rounded-l-full ${
-              darkMode ? "bg-[#4f46e5]" : "bg-[#60a5fa]"
-            }`}
+            className={`c-right h-full w-5 absolute right-0 rounded-l-full ${darkMode ? "bg-[#4f46e5]" : "bg-[#60a5fa]"
+              }`}
           ></div>
 
           <p className="text-md justify-center text-center italic">
             For discussions and opportunities, connect with me directly at{" "}
             <br />
             <a
-              className={`underline underline-offset-2 ${
-                darkMode ? "text-[#ADD8E6]" : "text-[#1e3a8a]"
-              } hover:text-indigo-700`}
-              href="mailto:soham0110banik@gmail.com"
+              className={`underline underline-offset-2 ${darkMode ? "text-[#ADD8E6]" : "text-[#1e3a8a]"
+                } hover:text-indigo-700`}
+              href={`mailto:${LINKS.email}`}
             >
-              soham0110banik@gmail.com
+              {LINKS.email}
             </a>
             <br /> or through the form below.
           </p>
@@ -94,9 +92,8 @@ const Contact = () => {
               required
             />
             <button
-              className={`bg-indigo-700 hover:bg-indigo-800 border border-blue-900 rounded-lg text-white w-fit flex items-center flex p-2 ml-auto ${
-                done ? "opacity-50 cursor-not-allowed" : ""
-              }`}
+              className={`bg-indigo-700 hover:bg-indigo-800 border border-blue-900 rounded-lg text-white w-fit flex items-center flex p-2 ml-auto ${done ? "opacity-50 cursor-not-allowed" : ""
+                }`}
               disabled={done}
             >
               {!done ? (

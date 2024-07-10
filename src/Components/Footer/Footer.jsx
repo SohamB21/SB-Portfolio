@@ -5,6 +5,7 @@ import github from "../../assets/logos/github.png";
 import linkedin from "../../assets/logos/linkedin.png";
 import gmail from "../../assets/logos/gmail.png";
 import { ThemeContext } from "../../context.jsx";
+import { LINKS } from "../../assets/constants/links.js";
 
 const Footer = () => {
   const theme = useContext(ThemeContext);
@@ -41,7 +42,7 @@ const Footer = () => {
 
         <div className="flex flex-row gap-4 ml-auto items-center">
           <a
-            href="https://github.com/SohamB21"
+            href={LINKS.github}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -54,7 +55,7 @@ const Footer = () => {
             </button>
           </a>
           <a
-            href="https://www.linkedin.com/in/soham-banik-b13909237"
+            href={LINKS.linkedin}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -67,7 +68,7 @@ const Footer = () => {
             </button>
           </a>
           <a
-            href="mailto:soham0110banik@gmail.com"
+            href={`mailto:${LINKS.email}`}
             target="_blank"
             rel="noopener noreferrer"
           >

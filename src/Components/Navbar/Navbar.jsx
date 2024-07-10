@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import { FiMenu } from "react-icons/fi";
 import { ThemeContext } from "../../context.jsx";
+import { LINKS } from "../../assets/constants/links.js";
 
 const Navbar = () => {
   const theme = useContext(ThemeContext);
@@ -60,9 +61,8 @@ const Navbar = () => {
             to="Home"
             smooth={true}
             duration={600}
-            className={`cursor-pointer text-[#007fff] hover:text-[#0c46bc] font-extrabold text-3xl ${
-              darkMode ? "text-white" : "text-blue-950"
-            }`}
+            className={`cursor-pointer text-[#007fff] hover:text-[#0c46bc] font-extrabold text-3xl ${darkMode ? "text-white" : "text-blue-950"
+              }`}
             style={{ fontFamily: "whisper" }}
           >
             Soham Banik
@@ -87,20 +87,18 @@ const Navbar = () => {
                 to={to}
                 smooth={true}
                 duration={600}
-                className={`cursor-pointer ${
-                  darkMode ? "text-[#ADD8E6]" : "text-blue-950"
-                } hover:text-[#0c46bc]`}
+                className={`cursor-pointer ${darkMode ? "text-[#ADD8E6]" : "text-blue-950"
+                  } hover:text-[#0c46bc]`}
               >
                 {label}
               </ScrollLink>
             ))}
             <a
-              href={`https://drive.google.com/file/d/1-RoDwqJrYq0IMNE-MOIDiBUBZ6bmgUFi/view?usp=sharing`}
+              href={LINKS.resume}
               target="_blank"
               rel="noopener noreferrer"
-              className={`cursor-pointer ${
-                darkMode ? "text-white" : "text-[#0c46bc]"
-              } hover:text-[#007fff]`}
+              className={`cursor-pointer ${darkMode ? "text-white" : "text-[#0c46bc]"
+                } hover:text-[#007fff]`}
             >
               Resume
             </a>
@@ -116,16 +114,15 @@ const Navbar = () => {
                 to={to}
                 smooth={true}
                 duration={500}
-                className={`cursor-pointer ${
-                  darkMode ? "text-white" : "text-[#007fff]"
-                } hover:text-[#0c46bc]`}
+                className={`cursor-pointer ${darkMode ? "text-white" : "text-[#007fff]"
+                  } hover:text-[#0c46bc]`}
                 onClick={handleToggleMenu}
               >
                 {label}
               </ScrollLink>
             ))}
             <Button
-              href={`https://drive.google.com/file/d/1-RoDwqJrYq0IMNE-MOIDiBUBZ6bmgUFi/view?usp=sharing`}
+              href={LINKS.resume}
               target="_blank"
               rel="noopener noreferrer"
               variant="outlined"

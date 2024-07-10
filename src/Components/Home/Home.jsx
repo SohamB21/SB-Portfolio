@@ -9,6 +9,7 @@ import gmail from "../../assets/logos/gmail.png";
 import resume from "../../assets/media/resume.svg";
 import { Link as ScrollLink } from "react-scroll";
 import { ThemeContext } from "../../context.jsx";
+import { LINKS } from "../../assets/constants/links.js";
 
 const Home = () => {
   const theme = useContext(ThemeContext);
@@ -66,7 +67,7 @@ const Home = () => {
 
         <div className="flex flex-row flex-wrap gap-4 lg:justify-start md:justify-start justify-center">
           <a
-            href="https://drive.google.com/file/d/1-RoDwqJrYq0IMNE-MOIDiBUBZ6bmgUFi/view?usp=sharing"
+            href={LINKS.resume}
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 bg-white shadow-md shadow-blue-500 flex items-center justify-center rounded-full hover:transform hover:scale-110 transition-transform duration-300 p-1"
@@ -75,7 +76,7 @@ const Home = () => {
           </a>
 
           <a
-            href="https://github.com/SohamB21"
+            href={LINKS.github}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -88,7 +89,7 @@ const Home = () => {
             </button>
           </a>
           <a
-            href="https://www.linkedin.com/in/soham-banik-b13909237"
+            href={LINKS.linkedin}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -101,7 +102,7 @@ const Home = () => {
             </button>
           </a>
           <a
-            href="mailto:soham0110banik@gmail.com"
+            href={`mailto:${LINKS.email}`}
             target="_blank"
             rel="noopener noreferrer"
           >
