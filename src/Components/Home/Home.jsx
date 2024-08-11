@@ -1,11 +1,12 @@
 import React from "react";
 import { useContext } from "react";
 import "./Home.css";
-import myphoto from "../../assets/media/myphoto.png";
-import myphotosmall from "../../assets/media/myphotosmall.png";
+import myphoto from "../../assets/media/myphotoUps.png";
+import myphotosmall from "../../assets/media/myphotosmallUps.png";
 import github from "../../assets/logos/github.png";
 import linkedin from "../../assets/logos/linkedin.png";
 import gmail from "../../assets/logos/gmail.png";
+// import twitter from "../../assets/logos/twitter.jpg";
 import resume from "../../assets/media/resume.svg";
 import { Link as ScrollLink } from "react-scroll";
 import { ThemeContext } from "../../context.jsx";
@@ -101,6 +102,19 @@ const Home = () => {
               />
             </button>
           </a>
+          {/* <a
+            href={LINKS.twitter}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="w-12 h-12 bg-white shadow-md shadow-blue-500 flex items-center justify-center rounded-full hover:transform hover:scale-110 transition-transform duration-300">
+              <img
+                className="object-contain w-11 h-11 rounded-full"
+                src={twitter}
+                alt="X"
+              />
+            </button>
+          </a> */}
           <a
             href={`mailto:${LINKS.email}`}
             target="_blank"
@@ -130,6 +144,7 @@ const Home = () => {
             src={myphoto}
             alt="My Photo"
             className="i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
+            // className="w-full md:w-4/5 lg:w-1/2 h-auto md:h-1/3 lg:h-1/3 i-img rounded-full shadow-md transition-transform transform hover:scale-110 duration-500"
           />
           <p
             style={{ fontFamily: "Whisper" }}
