@@ -13,7 +13,7 @@ const Experience = () => {
       company: "Onlighten Media",
       title: "PHP Developer Intern",
       description:
-        "My role involves continuous learning and practical implementation. I benefit from a collaborative environment with a supportive team and working closely with senior developers has significantly enhanced my skills and understanding of web development best practices.",
+        "My role involves continuous learning and hands-on implementation. I have contributed to multiple projects that cater to a wide user base, helping the company grow and achieve its business goals. Collaborating with a supportive team has sharpened my skills and deepened my understanding of software development best practices.",
       companyLink: "https://www.linkedin.com/company/onlighten-media/",
       skills: ["CodeIgniter", "PHP", "MySQL", "Web Development"],
     },

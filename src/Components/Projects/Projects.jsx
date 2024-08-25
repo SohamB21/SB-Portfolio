@@ -94,8 +94,8 @@ const projectData = [
   },
 ];
 
-const generateProjectItem = (project) => (
-  <div className="relative group overflow-hidden m-4 py-2 px-2 shadow-lg shadow-blue-500 rounded-lg border border-blue-200 flex flex-col justify-center items-center self-stretch">
+const generateProjectItem = (project, index) => (
+  <div key={index} className="relative group overflow-hidden m-4 py-2 px-2 shadow-lg shadow-blue-500 rounded-lg border border-blue-200 flex flex-col justify-center items-center self-stretch">
     <img
       src={project.imageSrc}
       alt={project.altText}
