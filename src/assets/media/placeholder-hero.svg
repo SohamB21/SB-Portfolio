@@ -1,0 +1,7 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" rx="40" fill="#E2E8F0"/>
+  <circle cx="200" cy="150" r="60" fill="#94A3B8"/>
+  <path d="M200 230C140 230 90 270 90 320V400H310V320C310 270 260 230 200 230Z" fill="#94A3B8"/>
+  <rect x="50" y="50" width="300" height="300" rx="20" stroke="#CBD5E1" stroke-width="4" stroke-dasharray="10 10"/>
+  <text x="200" y="380" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Placeholder Image</text>
+</svg>

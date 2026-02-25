@@ -1,0 +1,34 @@
+phase 1 - [Done]
+we will finalise a color palette
+
+Finalized Brand Palette:
+Brand Primary - #006837 - Headings, primary buttons, logo.
+Secondary Green - #8CC63F - Accents, blobs, hover states.
+Call to Action - #F7941D - CTA buttons, badges, highlights.
+Background (Primary) - #FFFFFF - Main light mode background.
+Background (Soft) - #FAFAFA - Section transitions, subtle depth.
+Text (Heading) - #171717 - High-contrast title text.
+Text (Body) - #4B5563 - Paragraphs and descriptions.
+
+phase 2 - [Done]
+we will finalise a font stack
+
+The Finalized Font Stack:
+Outfit - Primary / Brand - Headings, Logo - Premium geometric sans.
+Inter - UI / Body - Body, Buttons, Forms - Clean technical UI.
+Yellowtail - Personal Accent - Subtitles, Hero text - Personal signature feel.
+Whisper - Signature - Footer, Art labels - Decorative branding.
+Playfair Display - Editorial - Quotes, Highlights - Elegant classic serif.
+
+phase 3 - [Done]
+we will go component by component
+first we will finalise the header and footer - [Done]
+then we will finalise the about, skills, projects - [Done]
+then we will finalise the contact and experience - [Done]
+then we will finalise the home section at the end - [Done]
+then we will work on the toggle theme - [Done]
+then we will work on the navigation - [Done]
+then we will work on the overall aesthetics - [Done]
+then we will work on the performance and responsiveness - [In Progress]
+then we will work on the SEO and accessibility - [In Progress]
+then we will work on the final deployment

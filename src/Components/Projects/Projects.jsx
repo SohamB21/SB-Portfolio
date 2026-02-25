@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { ThemeContext } from "../../context.jsx";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { BurstStar, DotGrid, CodeIcon, TerminalIcon, ZigZag, Squiggle, Sparkle, CircleDoodle } from "../Decorations/Decorations";
 
 import FanaticsImage from "../../assets/projects/FanaticsImage.jpg";
 import PepperSprayImage from "../../assets/projects/PepperSprayImage.png";
@@ -94,86 +97,154 @@ const projectData = [
   },
 ];
 
-const generateProjectItem = (project, index) => (
-  <div key={index} className="relative group overflow-hidden m-4 py-2 px-2 shadow-lg shadow-blue-500 rounded-lg border border-blue-200 flex flex-col justify-center items-center self-stretch">
-    <img
-      src={project.imageSrc}
-      alt={project.altText}
-      className="w-96 h-56 shadow-md shadow-blue-500 rounded-lg transition-transform hover:scale-105"
-    />
+const ProjectCard = ({ project, darkMode }) => {
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [isHovered, setIsHovered] = useState(false);
 
-    <div className="info max-w-md flex flex-col items-center justify-center p-1 text-center">
-      <h3 className="text-2xl font-bold mt-2 mb-1">{project.altText}</h3>
-      <p className="text-sm">{project.description}</p>
-      <div className="flex flex-wrap gap-2 mt-2 justify-center">
-        {project.languages.map((language, index) => (
-          <span
-            key={index}
-            className="text-sm border-2 border-indigo-600 p-1 rounded-md hover:text-white hover:bg-indigo-600 hover:border-2 hover:border-blue-900 duration-300"
-          >
-            {language}
-          </span>
-        ))}
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setMousePos({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
+
+  return (
+    <div
+      className={`relative group overflow-hidden rounded-2xl border-2 transition-all duration-500 flex flex-col h-full
+      ${darkMode
+          ? "bg-slate-800/80 border-slate-700 hover:border-primary/50"
+          : "bg-white/80 border-transparent hover:border-primary/30 shadow-lg shadow-gray-200/50"
+        } hover:-translate-y-2`}
+      onMouseMove={handleMouseMove}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Spotlight Effect */}
+      <div
+        className="absolute inset-0 pointer-events-none transition-opacity duration-300 opacity-0 group-hover:opacity-100 z-0"
+        style={{
+          background: `radial-gradient(500px circle at ${mousePos.x}px ${mousePos.y}px, ${darkMode ? "rgba(0, 104, 55, 0.35)" : "rgba(0, 104, 55, 0.22)"}, transparent 60%)`,
+        }}
+      />
+
+      {/* Image Container */}
+      <div className="relative h-56 sm:h-64 overflow-hidden z-10">
+        <div className={`absolute inset-0 z-10 transition-opacity duration-300 pointer-events-none ${darkMode ? "bg-black/40 group-hover:bg-black/10" : "bg-primary/10 group-hover:bg-transparent"}`}></div>
+        <img
+          src={project.imageSrc}
+          alt={project.altText}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+
+        {/* Overlay Actions */}
+        <div className={`absolute inset-0 z-20 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-4 bg-slate-900/60 backdrop-blur-[2px]`}>
+          {project.deployedLink && (
+            <a
+              href={project.deployedLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-cta rounded-full text-white hover:scale-110 transition-transform shadow-lg"
+              title="View Live"
+            >
+              <FiExternalLink size={24} />
+            </a>
+          )}
+          {project.githubLink && (
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-white rounded-full text-slate-900 hover:scale-110 transition-transform shadow-lg"
+              title="View Code"
+            >
+              <FiGithub size={24} />
+            </a>
+          )}
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="p-8 flex flex-col flex-grow relative z-10">
+        <h3 className={`text-2xl font-extrabold uppercase font-outfit mb-3 ${darkMode ? "text-cta" : "text-primary"}`}>{project.altText}</h3>
+
+        <p className={`text-sm mb-6 flex-grow leading-relaxed font-outfit font-medium ${darkMode ? "text-slate-400" : "text-text-body/80"}`}>
+          {project.description}
+        </p>
+
+        {/* Tech Stack */}
+        <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-gray-100/10">
+          {project.languages.map((language, index) => (
+            <span
+              key={index}
+              className={`text-[0.7rem] uppercase tracking-wider font-extrabold px-3 py-1 rounded-full ${darkMode ? "bg-slate-700 text-primary-300" : "bg-primary/10 text-primary"}`}
+            >
+              {language}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
-
-    <div className="flex flex-row items-center justify-center gap-4 text-white mt-2">
-      {project.deployedLink && (
-        <a
-          href={project.deployedLink}
-          className="bg-blue-600 hover:bg-blue-700 border border-blue-900 rounded-md py-2 px-4"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Deployed Project
-        </a>
-      )}
-      {project.githubLink && (
-        <a
-          href={project.githubLink}
-          className="bg-blue-600 hover:bg-blue-700 border border-blue-900 rounded-md py-2 px-4"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-      )}
-    </div>
-  </div>
-);
+  );
+};
 
 const Projects = () => {
   const [showAllProjects, setShowAllProjects] = useState(false);
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   const visibleProjects = showAllProjects
     ? projectData
-    : projectData.slice(0, 4);
+    : projectData.slice(0, 6);
 
   return (
     <section
       id="Projects"
-      className="p h-full w-full flex flex-col items-center justify-center py-16"
+      className="w-full py-24 px-4 relative overflow-hidden"
     >
-      <h1 className="text-3xl font-bold">My Projects</h1>
-      <div className="flex flex-wrap pt-10 pb-4 items-center justify-center">
-        {visibleProjects.map(generateProjectItem)}
+      {/* Background Decoration */}
+      <div className={`absolute top-0 right-0 w-full h-full -z-20 ${darkMode ? 'bg-slate-900' : 'bg-white'}`}></div>
+
+      {/* Unique SVG Decorations */}
+      <CodeIcon className={`absolute -top-10 -left-15 w-64 h-64 opacity-60 ${darkMode ? "text-primary" : "text-primary/40"} -rotate-12`} />
+
+      <Sparkle className={`absolute bottom-20 right-1/3 w-10 h-10 opacity-[0.15] ${darkMode ? "text-cta" : "text-cta"} animate-pulse`} />
+
+      <div className={`absolute bottom-10 left-10 w-72 h-72 -z-10 opacity-20 animate-wiggle ${darkMode ? "text-cta" : "text-cta"}`}>
+        <CircleDoodle />
       </div>
 
-      {!showAllProjects && (
+      <div className="flex flex-col items-center justify-center max-w-7xl mx-auto space-y-16 relative z-10">
+
+        <div className="text-center space-y-4 mb-4 relative">
+          <div className="relative inline-block">
+            <span className={`font-yellowtail text-4xl md:text-5xl block transform -rotate-6 ${darkMode ? "text-cta" : "text-cta"} mb-2`}>My Work!</span>
+            <h1 className={`text-6xl md:text-8xl font-extrabold font-outfit uppercase tracking-tight ${darkMode ? "text-white" : "text-primary"}`}>
+              Projects
+            </h1>
+
+            {/* Clean Curved Lines Burst */}
+            <BurstStar className={`absolute -top-4 -right-12 w-14 h-14 ${darkMode ? "text-cta" : "text-cta"} animate-pulse`} />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full px-2">
+          {visibleProjects.map((project, index) => (
+            <ProjectCard key={index} project={project} darkMode={darkMode} />
+          ))}
+        </div>
+
         <button
-          className="bg-indigo-700 hover:bg-indigo-800 border border-blue-900 rounded-md py-2 px-4 text-white"
-          onClick={() => setShowAllProjects(true)}
+          className={`px-10 py-4 rounded-full font-bold tracking-wide transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2 shadow-xl
+          ${darkMode
+              ? "bg-primary hover:bg-primary/80 text-white"
+              : "bg-primary hover:bg-primary/90 text-white"
+            }`}
+          onClick={() => setShowAllProjects(!showAllProjects)}
         >
-          See More
+          {showAllProjects ? "Show Less" : "See All Projects"}
         </button>
-      )}
-      {showAllProjects && (
-        <button
-          className="bg-indigo-700 hover:bg-indigo-800 border border-blue-900 rounded-md py-2 px-4 text-white"
-          onClick={() => setShowAllProjects(false)}
-        >
-          See Less
-        </button>
-      )}
+      </div>
     </section>
   );
 };
