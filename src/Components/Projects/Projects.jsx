@@ -130,7 +130,7 @@ const ProjectCard = ({ project, darkMode }) => {
 
       {/* Image Container */}
       <div className="relative h-56 sm:h-64 overflow-hidden z-10">
-        <div className={`absolute inset-0 z-10 transition-opacity duration-300 pointer-events-none ${darkMode ? "bg-black/40 group-hover:bg-black/10" : "bg-primary/10 group-hover:bg-transparent"}`}></div>
+        <div className={`absolute inset-0 z-10 transition-opacity duration-300 pointer-events-none ${darkMode ? "group-hover:bg-black/10" : "group-hover:bg-transparent"}`}></div>
         <img
           src={project.imageSrc}
           alt={project.altText}
