@@ -5,6 +5,7 @@ import About from "./Components/About/About.jsx";
 import Skills from "./Components/Skills/Skills.jsx";
 import Projects from "./Components/Projects/Projects.jsx";
 import Experience from "./Components/Experience/Experience.jsx";
+import Gallery from "./Components/Gallery/Gallery.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import ToggleMode from "./Components/ToggleMode/ToggleMode.jsx";
@@ -36,6 +37,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
+        <Gallery />
         <Contact />
         <Footer />
         <ToggleMode />

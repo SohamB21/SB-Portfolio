@@ -107,7 +107,7 @@ const Home = () => {
             </div>
 
             <p className={`text-lg md:text-2xl leading-relaxed max-w-lg mx-auto lg:mx-0 ${darkMode ? "text-slate-400" : "text-text-body"} font-outfit`}>
-              Building seamless digital experiences with clean code and modern design.
+              I build scalable software, AI systems and tools that solve real problems.
             </p>
           </div>
 

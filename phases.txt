@@ -32,3 +32,13 @@ then we will work on the overall aesthetics - [Done]
 then we will work on the performance and responsiveness - [In Progress]
 then we will work on the SEO and accessibility - [In Progress]
 then we will work on the final deployment
+
+gallery component images list -
+1. gdg devfest
+2. startup mahakumbh
+3. techfest svu sih
+4. certifications c c++
+5. alagappa conference certifications
+6. fyp
+
+add immedic ai in projects
