@@ -34,11 +34,14 @@ then we will work on the SEO and accessibility - [In Progress]
 then we will work on the final deployment
 
 gallery component images list -
-1. gdg devfest
+
+1. bharat mandappam
 2. startup mahakumbh
-3. techfest svu sih
-4. certifications c c++
+3. iclmc certificate
+4. techfest svu sih
 5. alagappa conference certifications
 6. fyp
+7. gdg devfest
+8. iies certificate c c++
 
 add immedic ai in projects

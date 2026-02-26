@@ -5,6 +5,15 @@ import terrainBG from "../../assets/media/terrain.svg";
 import { Fade, Grow } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 
+// Gallery Images
+import bharatMandappam from "../../assets/gallery/bharat-mandappam.jpg";
+import startupMahakumbh from "../../assets/gallery/startup-mahakumbh-ai.png";
+import techfestPepper from "../../assets/gallery/techfest-pepperspray.png";
+import iclmcCert from "../../assets/gallery/iclmc-certificate.png";
+import ncidacCert from "../../assets/gallery/ncidac-certificate.png";
+import devfest from "../../assets/gallery/devfest.jpg";
+import iiesCert from "../../assets/gallery/iies-certificate.png";
+
 const Gallery = () => {
     const theme = useContext(ThemeContext);
     const darkMode = theme.state.darkMode;
@@ -13,45 +22,59 @@ const Gallery = () => {
     const galleryItems = [
         {
             id: 1,
-            title: "GDG Devfest",
+            title: "Bharat Mandappam",
             category: "Events",
-            image: "https://picsum.photos/id/10/800/600",
+            image: bharatMandappam,
             size: "large", // spans 2 columns
         },
         {
             id: 2,
             title: "Startup Mahakumbh",
             category: "Competition",
-            image: "https://picsum.photos/id/20/400/300",
-            size: "small",
+            image: startupMahakumbh,
+            size: "medium",
         },
         {
             id: 3,
-            title: "Techfest SVU SIH",
+            title: "SIH TechFest PepperSpray",
             category: "Events",
-            image: "https://picsum.photos/id/30/600/800",
+            image: techfestPepper,
             size: "tall", // spans 2 rows
         },
         {
             id: 4,
-            title: "Certifications C C++",
-            category: "Learning",
-            image: "https://picsum.photos/id/40/600/400",
+            title: "ICLMC Certificate",
+            category: "Certification",
+            image: iclmcCert,
             size: "medium",
         },
         {
             id: 5,
-            title: "Alagappa Conference Certifications",
-            category: "Teaching",
-            image: "https://picsum.photos/id/50/400/400",
-            size: "small",
-        },
-        {
-            id: 6,
             title: "FYP",
             category: "Projects",
             image: "https://picsum.photos/id/60/800/400",
             size: "wide",
+        },
+        {
+            id: 6,
+            title: "GDG Devfest",
+            category: "Events",
+            image: devfest,
+            size: "large",
+        },
+        {
+            id: 7,
+            title: "IIES Certificate",
+            category: "Certification",
+            image: iiesCert,
+            size: "medium",
+        },
+        {
+            id: 8,
+            title: "NCIDAC Certificate",
+            category: "Certification",
+            image: ncidacCert,
+            size: "medium",
         },
     ];
 
@@ -90,7 +113,7 @@ const Gallery = () => {
 
             <div className="container mx-auto max-w-7xl relative z-10">
                 {/* HEADER - Styled like other sections */}
-                <div className="text-center mb-20 space-y-4 relative">
+                <div className="text-center mb-12 space-y-4 relative">
                     <Fade in={inView} timeout={800}>
                         <div className="relative inline-block">
                             <span className={`font-yellowtail text-4xl md:text-5xl block transform -rotate-6 ${darkMode ? "text-cta" : "text-cta"} mb-2`}>
@@ -109,7 +132,7 @@ const Gallery = () => {
                 </div>
 
                 {/* BENTO GRID */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[250px]">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
                     {galleryItems.map((item, index) => (
                         <Grow key={item.id} in={inView} timeout={500 + (index * 100)}>
                             <div
@@ -127,8 +150,8 @@ const Gallery = () => {
                                         alt={item.title}
                                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                     />
-                                    {/* Subtler gradient just for text legibility on hover */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                    {/* Gradient for text legibility - always visible */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent transition-opacity duration-500" />
                                 </div>
 
                                 {/* Topographic Texture Overlay */}
@@ -140,10 +163,10 @@ const Gallery = () => {
                                     }}
                                 />
 
-                                {/* Content - Reveal on hover */}
+                                {/* Content */}
                                 <div className="absolute inset-0 z-10 p-8 flex flex-col justify-end">
-                                    <div className="transform transition-all duration-500 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
-                                        <span className="font-yellowtail text-xl text-cta mb-2 block">
+                                    <div className="transform transition-all duration-500">
+                                        <span className="font-yellowtail text-xl text-cta mb-2 block opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                                             {item.category}
                                         </span>
                                         <h3 className="text-3xl font-black font-outfit text-white uppercase tracking-tight leading-[0.8] drop-shadow-lg">
