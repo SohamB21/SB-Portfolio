@@ -12,8 +12,18 @@ import TypingSpeedTestGameImage from "../../assets/projects/TypingSpeedTestGameI
 import ResumeGeneratorImage from "../../assets/projects/ResumeGeneratorImage.jpg";
 import PortfolioImage from "../../assets/projects/PortfolioImage.png";
 import StickyNotesImage from "../../assets/projects/StickyNotesImage.jpg";
+import ImmedicAIImage from "../../assets/projects/ImmedicAIImage.png";
 
 const projectData = [
+  {
+    imageSrc: ImmedicAIImage,
+    altText: "Immedic AI",
+    description:
+      "A diagnostic system designed for early stroke prediction and care. It combines machine learning models trained on chosen datasets for personalized risk assessment and Google's Gemma LLM for actionable lifestyle guidance, all visualized through interactive dashboards and dedicated analysis reports.",
+    languages: ["Python", "ReactJS", "Scikit", "SHAP", "Machine Learning", "LLM", "MongoDB"],
+    deployedLink: "https://immedic-ai.vercel.app/",
+    githubLink: null,
+  },
   {
     imageSrc: FanaticsImage,
     altText: "Fanatics",

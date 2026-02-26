@@ -40,8 +40,8 @@ gallery component images list -
 3. iclmc certificate
 4. techfest svu sih
 5. alagappa conference certifications
-6. fyp
+6. fyp -> to add
 7. gdg devfest
 8. iies certificate c c++
 
-add immedic ai in projects
+add immedic ai in projects -> to add images from canva
