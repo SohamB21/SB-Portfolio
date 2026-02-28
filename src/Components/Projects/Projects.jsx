@@ -12,7 +12,7 @@ import TypingSpeedTestGameImage from "../../assets/projects/TypingSpeedTestGameI
 import ResumeGeneratorImage from "../../assets/projects/ResumeGeneratorImage.jpg";
 import PortfolioImage from "../../assets/projects/PortfolioImage.png";
 import StickyNotesImage from "../../assets/projects/StickyNotesImage.jpg";
-import ImmedicAIImage from "../../assets/projects/ImmedicAIImage.png";
+import ImmedicAIImage from "../../assets/projects/ImmedicAI.png";
 
 const projectData = [
   {

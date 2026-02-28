@@ -13,6 +13,7 @@ import iclmcCert from "../../assets/gallery/iclmc-certificate.png";
 import ncidacCert from "../../assets/gallery/ncidac-certificate.png";
 import devfest from "../../assets/gallery/devfest.jpg";
 import iiesCert from "../../assets/gallery/iies-certificate.png";
+import immedicAI from "../../assets/gallery/immedic-ai.png";
 
 const Gallery = () => {
     const theme = useContext(ThemeContext);
@@ -50,9 +51,9 @@ const Gallery = () => {
         },
         {
             id: 5,
-            title: "FYP",
+            title: "Final Year Research",
             category: "Projects",
-            image: "https://picsum.photos/id/60/800/400",
+            image: immedicAI,
             size: "wide",
         },
         {
