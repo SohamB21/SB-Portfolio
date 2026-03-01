@@ -58,7 +58,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-[100] transition-all duration-500 ${scrolled
-        ? darkMode ? "bg-slate-900/80 backdrop-blur-xl border-b border-slate-800 shadow-2xl" : "bg-white/80 backdrop-blur-xl border-b border-white/60 shadow-lg"
+        ? darkMode ? "bg-slate-900/80 backdrop-blur-xl border-b border-slate-800" : "bg-white/80 backdrop-blur-xl border-b border-white/60"
         : "bg-transparent"
         }`}
     >

@@ -13,7 +13,7 @@ import iclmcCert from "../../assets/gallery/iclmc-certificate.png";
 import ncidacCert from "../../assets/gallery/ncidac-certificate.png";
 import devfest from "../../assets/gallery/devfest.jpg";
 import iiesCert from "../../assets/gallery/iies-certificate.png";
-import immedicAI from "../../assets/gallery/immedic-ai.png";
+import immedicAI from "../../assets/gallery/final-year-research.png";
 
 const Gallery = () => {
     const theme = useContext(ThemeContext);
@@ -54,7 +54,7 @@ const Gallery = () => {
             title: "Final Year Research",
             category: "Projects",
             image: immedicAI,
-            size: "wide",
+            size: "tall",
         },
         {
             id: 6,

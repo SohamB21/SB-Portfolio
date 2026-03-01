@@ -12,6 +12,7 @@
     "format-check": "prettier --check ."
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/lab": "^5.0.0-alpha.159",
