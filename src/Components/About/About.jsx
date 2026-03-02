@@ -112,7 +112,7 @@ const About = () => {
                 {/* Content */}
                 <blockquote className="relative z-10">
                   <p className={`text-lg md:text-2xl lg:text-3xl italic font-outfit leading-[1.3] text-center tracking-tight ${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    " I build scalable software solutions with a focus on performance, usability and maintainability. I enjoy turning complex ideas into reliable products and continuously improving systems to make them faster, simpler and more efficient."
+                    "I build scalable software and AI systems with a focus on performance, usability and maintainability. I enjoy creating and using innovative AI tools to turn complex ideas into reliable products, continuously improving systems to make them smarter, faster and more efficient."
                   </p>
                 </blockquote>
               </div>
