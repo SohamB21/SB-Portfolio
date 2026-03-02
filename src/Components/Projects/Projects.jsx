@@ -10,7 +10,7 @@ import NoteNestImage from "../../assets/projects/NoteNestImage.jpg";
 import SportsQuoteGeneratorImage from "../../assets/projects/SportsQuoteGeneratorImage.jpg";
 import TypingSpeedTestGameImage from "../../assets/projects/TypingSpeedTestGameImage.png";
 import ResumeGeneratorImage from "../../assets/projects/ResumeGeneratorImage.jpg";
-import PortfolioImage from "../../assets/projects/PortfolioImage.png";
+import PortfolioImage from "../../assets/projects/NewPortfolio.png";
 import StickyNotesImage from "../../assets/projects/StickyNotesImage.jpg";
 import ImmedicAIImage from "../../assets/projects/ImmedicAI.png";
 
